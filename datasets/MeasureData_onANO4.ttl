@@ -1,0 +1,1929 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix analytics: <http://www.adage.unsw.edu.au/analytics#> .
+@prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#> .
+
+adage:DREF00001 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://www.census.gov/data.html"^^xsd:anyURI ;
+                   rdfs:label "United States Census Bureau Data"^^rdfs:Literal .
+
+adage:DREF00002 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://fred.stlouisfed.org/"^^xsd:anyURI ;
+                   rdfs:label "The Federal Reserve Bank of St. Louis Data"^^rdfs:Literal .
+
+adage:DREF00003 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "http://www.econ.yale.edu/~shiller/data.htm"^^xsd:anyURI ;
+                   rdfs:label "Online Data Robert Shiller"^^rdfs:Literal .
+
+adage:DREF00004 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://wrds-web.wharton.upenn.edu/"^^xsd:anyURI ;
+                   rdfs:label "Wharton Database"^^rdfs:Literal .
+
+adage:DREF00005 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://data.aurin.org.au/dataset/"^^xsd:anyURI ;
+                   rdfs:label "Australian Property Monitors"^^rdfs:Literal .
+
+adage:DREF00006 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://www.corelogic.com.au/products/rp-data-professional"^^xsd:anyURI ;
+                   rdfs:label "CoreLogic Property Transactions Data"^^rdfs:Literal .
+
+adage:DREF00007 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "http://stat.data.abs.gov.au/"^^xsd:anyURI ;
+                   rdfs:label "Australian Bureau of Statistics "^^rdfs:Literal .
+
+adage:DREF00008 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://www.rba.gov.au/statistics/"^^xsd:anyURI ;
+                   rdfs:label "Reserve Bank of Australia "^^rdfs:Literal .
+
+adage:DREF00009 rdf:type owl:NamedIndividual , analytics:DataSource ;
+                   analytics:webLink "https://finance.yahoo.com/"^^xsd:anyURI ;
+                   rdfs:label "Yahoo Finance"^^rdfs:Literal .
+
+adage:SREF00001 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "United States Census Bureau Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00001 .
+
+adage:SREF00010 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "The Federal Reserve Bank of St. Louis Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00002 .
+
+adage:SREF00011 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "Online Data Robert Shiller Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00003 .
+
+adage:SREF00012 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "Wharton Database Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00004 .
+
+adage:SREF00002 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   analytics:webLink "https://data.aurin.org.au/dataset/apm-timeseries-apm-sa4-timeseries-sa4"^^xsd:anyURI ;
+                   rdfs:label "Australian Property Monitors SA4 Dataset Structure"^^rdfs:Literal ;
+            	   rdfs:comment "For sale, for rent and sold data by SA4 01/01/1986 - 31/12/2017"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00005 .
+
+adage:SREF00013 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   analytics:webLink "https://data.aurin.org.au/dataset/apm-timeseries-apm-sa3-timeseries-sa3"^^xsd:anyURI ;
+                   rdfs:label "Australian Property Monitors SA3 Dataset Structure"^^rdfs:Literal ;
+            	   rdfs:comment "For sale, for rent and sold data by SA3 01/01/1986 - 31/12/2017"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00005 .
+
+adage:SREF00014 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   analytics:webLink "https://data.aurin.org.au/dataset/apm-timeseries-apm-sa2-timeseries-sa2"^^xsd:anyURI ;
+                   rdfs:label "Australian Property Monitors SA2 Dataset Structure"^^rdfs:Literal ;
+            	   rdfs:comment "For sale, for rent and sold data by SA2 01/01/1986 - 31/12/2017"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00005 .
+
+adage:SREF00003 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "CoreLogic Property Transactions Australian Property Dales Data Set Structure"^^rdfs:Literal ;
+            	   rdfs:comment "Australian Property Dales Data Set"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00006 .
+
+adage:SREF00004 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "CoreLogic Property Transactions  New Zealand Property Dales Data Set Structure"^^rdfs:Literal ;
+            	   rdfs:comment "New Zealand Property Dales Data Set"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00006 .
+
+adage:SREF00005 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "CoreLogic Property Transactions Australian Campaign Listings Data Set Structure"^^rdfs:Literal ;
+            	   rdfs:comment "Australian Campaign Listings Data Set"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00006 .
+
+adage:SREF00006 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "CoreLogic Property Transactions New Zealand Campaign Listings Data Set Structure"^^rdfs:Literal ;
+            	   rdfs:comment "New Zealand Campaign Listings Data Set"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00006 .
+
+adage:SREF00007 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "Australian Bureau of Statistics Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00007 .
+
+adage:SREF00008 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "Reserve Bank of Australia Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00008 .
+
+adage:SREF00009 rdf:type owl:NamedIndividual , analytics:DatasetStructure ;
+                   rdfs:label "Yahoo Finance Dataset Structure"^^rdfs:Literal ;
+                   analytics:dataSource adage:DREF00009 .
+
+adage:MID00003 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   rdfs:label "Age Cohort"^^rdfs:Literal .
+
+adage:SREF00001   analytics:containMeasure adage:MID00003 .
+
+adage:MID00024 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionClearanceRate"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. 'Auction Total Sold' divided by 'Auction Total Reported'."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionClearanceRate"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00024 .
+
+adage:MID00017 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionListedCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Auction Listings."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionListedCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00017 .
+
+adage:MID00023 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionNotSoldCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Properties that went to auction but were not sold."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionNotSoldCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00023 .
+
+adage:MID00022 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionPostponedCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Properties postponed from one auction date to a later date."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionPostponedCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00022 .
+
+adage:MID00019 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionSoldAfterCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Properties sold after the auction."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionSoldAfterCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00019 .
+
+adage:MID00020 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionSoldPriorCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Properties sold prior to auction date."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionSoldPriorCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00020 .
+
+adage:MID00018 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionSoldUnderHammerCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Properties sold under the hammer at Auction."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionSoldUnderHammerCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00018 .
+
+adage:MID00025 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionTotalReported"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Total Number of Auctions reported (including all Auction outcomes and Withdrawn, but excluding Postponed).."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionTotalReported"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00025 .
+
+adage:MID00026 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionTotalSold"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Total Number of Properties sold at auction (including Sold Prior and Sold Under Hammer, but excluding Sold After)."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionTotalSold"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00026 .
+
+adage:MID00021 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Auction_Activity_AuctionWithdrawnCount"^^rdfs:Literal ;
+                   rdfs:comment "Auction Activity. Number of Properties withdrawn from auction."^^rdfs:Literal ;
+                   rdfs:label "Auction_Activity_AuctionWithdrawnCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00021 .
+
+adage:MID00185 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AB"^^rdfs:Literal ;
+                   rdfs:comment "Number of bathrooms"^^rdfs:Literal ;
+                   rdfs:label "Bathrooms"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00185 .
+
+adage:MID00256 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AB"^^rdfs:Literal ;
+                   rdfs:comment "Number of bathrooms"^^rdfs:Literal ;
+                   rdfs:label "Bathrooms"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00256 .
+
+adage:MID00184 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AA"^^rdfs:Literal ;
+                   rdfs:comment "Number of bedrooms"^^rdfs:Literal ;
+                   rdfs:label "Bedrooms"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00184 .
+
+adage:MID00255 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AA"^^rdfs:Literal ;
+                   rdfs:comment "Number of bedrooms"^^rdfs:Literal ;
+                   rdfs:label "Bedrooms"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00255 .
+
+adage:MID00191 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AH"^^rdfs:Literal ;
+                   rdfs:comment "Age of the building"^^rdfs:Literal ;
+                   rdfs:label "Building_Age"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00191 .
+
+adage:MID00261 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AG"^^rdfs:Literal ;
+                   rdfs:comment "Age of the building"^^rdfs:Literal ;
+                   rdfs:label "Building_Age"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00261 .
+
+adage:MID00182 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Y"^^rdfs:Literal ;
+                   rdfs:comment "Floor area of building in square metres"^^rdfs:Literal ;
+                   rdfs:label "Building_Floor_Area"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00182 .
+
+adage:MID00253 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Y"^^rdfs:Literal ;
+                   rdfs:comment "Floor area of building in square metres"^^rdfs:Literal ;
+                   rdfs:label "Building_Floor_Area"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00253 .
+
+adage:MID00183 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Z"^^rdfs:Literal ;
+                   rdfs:comment "Site coverage of the building in square metres"^^rdfs:Literal ;
+                   rdfs:label "Building_Site_Cover"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00183 .
+
+adage:MID00254 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Z"^^rdfs:Literal ;
+                   rdfs:comment "Site coverage of the building in square metres"^^rdfs:Literal ;
+                   rdfs:label "Building_Site_Cover"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00254 .
+
+adage:MID00223 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "33"^^rdfs:Literal ;
+                   rdfs:comment "A date identifying the start of the set of listings for the Property ID"^^rdfs:Literal ;
+                   rdfs:label "Campaign Start Date"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00223 .
+
+adage:MID00257 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AC"^^rdfs:Literal ;
+                   rdfs:comment "Current Capital Value (CV)"^^rdfs:Literal ;
+                   rdfs:label "Capital_Value"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00257 .
+
+adage:MID00142 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "23"^^rdfs:Literal ;
+                   rdfs:comment "Contract date of transfer which indicates the date on which the sale price was contractually committed between a vendor and a purchaser. In the states of NT and SA, contract date is not provided by the Valuer Generals."^^rdfs:Literal ;
+                   rdfs:label "Contract Date"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00142 .
+
+adage:MID00141 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "22"^^rdfs:Literal ;
+                   rdfs:comment "Sale price of transfer indicating the consideration for the property changing ownership."^^rdfs:Literal ;
+                   rdfs:label "Contract Price"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00141 .
+
+adage:MID00187 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AD"^^rdfs:Literal ;
+                   rdfs:comment "Current Capital Value (CV)"^^rdfs:Literal ;
+                   rdfs:label "Current_Capital_Value"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00187 .
+
+adage:MID00190 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AG"^^rdfs:Literal ;
+                   rdfs:comment "Date the CV assessment was made"^^rdfs:Literal ;
+                   rdfs:label "CV_Revision_Date"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00190 .
+
+adage:MID00010 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "DateMonth"^^rdfs:Literal ;
+                   rdfs:comment "Month of end date."^^rdfs:Literal ;
+                   rdfs:label "DateMonth"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00010 .
+
+adage:MID00009 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "DateYear"^^rdfs:Literal ;
+                   rdfs:comment "Year of end date."^^rdfs:Literal ;
+                   rdfs:label "DateYear"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00009 .
+
+adage:MID00011 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "EndDate"^^rdfs:Literal ;
+                   rdfs:comment "Date of end date."^^rdfs:Literal ;
+                   rdfs:label "EndDate"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00011 .
+
+adage:MID00250 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "V"^^rdfs:Literal ;
+                   rdfs:comment "The date the listing was first published/seen"^^rdfs:Literal ;
+                   rdfs:label "Event_Start_Date"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00250 .
+
+adage:MID00220 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "30"^^rdfs:Literal ;
+                   rdfs:comment "The date the listing was first published / seen."^^rdfs:Literal ;
+                   rdfs:label "First Listing Date"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00220 .
+
+adage:MID00213 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "23"^^rdfs:Literal ;
+                   rdfs:comment "A textual description of the price"^^rdfs:Literal ;
+                   rdfs:label "First Listing Price Desc"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00213 .
+
+adage:MID00214 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "24"^^rdfs:Literal ;
+                   rdfs:comment "The listing’s first advertised price. For rental properties, this will be the weekly rental price. "^^rdfs:Literal ;
+                   rdfs:label "First Listing Price From"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00214 .
+
+adage:MID00215 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "25"^^rdfs:Literal ;
+                   rdfs:comment "The listing’s first advertised price upper limit For rental properties, this will be the weekly rental price."^^rdfs:Literal ;
+                   rdfs:label "First Listing Price To"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00215 .
+
+adage:MID00212 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "22"^^rdfs:Literal ;
+                   rdfs:comment "A code for rental listings identifying the period used to describe the rental price in Price Desc column. A(nnual),M(onthly),F(ortnightly) or W(eekly)"^^rdfs:Literal ;
+                   rdfs:label "First Listing Rental Period"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00212 .
+
+adage:MID00029 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_AveragePrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Sum of total values divided by the number of values observed"^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_AveragePrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00029 .
+
+adage:MID00037 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition05Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 5th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition05Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00037 .
+
+adage:MID00038 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition10Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 10th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition10Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00038 .
+
+adage:MID00039 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition15Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 15th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition15Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00039 .
+
+adage:MID00040 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition20Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 20th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition20Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00040 .
+
+adage:MID00041 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition25Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 25th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition25Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00041 .
+
+adage:MID00042 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition30Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 30th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition30Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00042 .
+
+adage:MID00043 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition35Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 35th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition35Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00043 .
+
+adage:MID00044 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition40Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 40th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition40Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00044 .
+
+adage:MID00045 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition45Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 45th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition45Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00045 .
+
+adage:MID00046 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition50Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 50th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition50Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00046 .
+
+adage:MID00047 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition55Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 55th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition55Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00047 .
+
+adage:MID00048 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition60Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 60th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition60Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00048 .
+
+adage:MID00049 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition65Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 65th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition65Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00049 .
+
+adage:MID00050 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition70Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 70th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition70Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00050 .
+
+adage:MID00051 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition75Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 75th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition75Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00051 .
+
+adage:MID00052 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition80Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 80th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition80Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00052 .
+
+adage:MID00053 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition85Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 85th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition85Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00053 .
+
+adage:MID00054 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition90Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 95th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition90Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00054 .
+
+adage:MID00055 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPosition95Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 95th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPosition95Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00055 .
+
+adage:MID00036 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_DetailedPriceCalculationRecordCount"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Number of observed values usable for detailed position price calculations."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_DetailedPriceCalculationRecordCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00036 .
+
+adage:MID00027 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_EventCount"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Number of observations for defined aggregated statistic."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_EventCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00027 .
+
+adage:MID00057 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_GeometricMeanPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. The n'th root product of 'n' values."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_GeometricMeanPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00057 .
+
+adage:MID00030 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_MaximumPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. The highest observation."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_MaximumPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00030 .
+
+adage:MID00033 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_MedianPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Middle value in a range of values, 50th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_MedianPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00033 .
+
+adage:MID00031 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_MinimumPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. The lowest observation."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_MinimumPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00031 .
+
+adage:MID00034 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_Position25Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 25th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_Position25Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00034 .
+
+adage:MID00035 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_Position75Price"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Value occurring at the 75th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_Position75Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00035 .
+
+adage:MID00028 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_PriceCalculationRecordCount"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Number of observed values usable for price calculations."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_PriceCalculationRecordCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00028 .
+
+adage:MID00056 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_StandardDeviationPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. This shows how much variation exists between the observed values and the GeometricMeanPrice."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_StandardDeviationPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00056 .
+
+adage:MID00032 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Rent_Home_Lease_TotalPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Rent - Home Lease. Sum of total values."^^rdfs:Literal ;
+                   rdfs:label "For_Rent_Home_Lease_TotalPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00032 .
+
+adage:MID00060 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_AveragePrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Sum of total values divided by the number of values observed"^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_AveragePrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00060 .
+
+adage:MID00068 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition05Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 5th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition05Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00068 .
+
+adage:MID00069 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition10Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 10th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition10Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00069 .
+
+adage:MID00070 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition15Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 15th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition15Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00070 .
+
+adage:MID00071 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition20Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 20th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition20Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00071 .
+
+adage:MID00072 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition25Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 25th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition25Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00072 .
+
+adage:MID00073 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition30Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 30th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition30Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00073 .
+
+adage:MID00074 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition35Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 35th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition35Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00074 .
+
+adage:MID00075 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition40Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 40th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition40Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00075 .
+
+adage:MID00076 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition45Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 45th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition45Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00076 .
+
+adage:MID00077 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition50Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 50th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition50Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00077 .
+
+adage:MID00078 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition55Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 55th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition55Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00078 .
+
+adage:MID00079 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition60Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 60th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition60Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00079 .
+
+adage:MID00080 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition65Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 65th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition65Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00080 .
+
+adage:MID00081 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition70Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 70th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition70Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00081 .
+
+adage:MID00082 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition75Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 75th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition75Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00082 .
+
+adage:MID00083 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition80Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 80th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition80Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00083 .
+
+adage:MID00084 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition85Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 85th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition85Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00084 .
+
+adage:MID00085 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition90Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 95th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition90Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00085 .
+
+adage:MID00086 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPosition95Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 95th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPosition95Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00086 .
+
+adage:MID00067 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_DetailedPriceCalculationRe"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Number of observed values usable for detailed position price calculations."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_DetailedPriceCalculationRe"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00067 .
+
+adage:MID00058 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_EventCount"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Number of observations for defined aggregated statistic."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_EventCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00058 .
+
+adage:MID00088 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_GeometricMeanPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. The n'th root product of 'n' values."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_GeometricMeanPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00088 .
+
+adage:MID00061 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_MaximumPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. The highest observation."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_MaximumPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00061 .
+
+adage:MID00064 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_MedianPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Middle value in a range of values, 50th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_MedianPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00064 .
+
+adage:MID00062 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_MinimumPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. The lowest observation."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_MinimumPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00062 .
+
+adage:MID00065 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_Position25Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 25th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_Position25Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00065 .
+
+adage:MID00066 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_Position75Price"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Value occurring at the 75th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_Position75Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00066 .
+
+adage:MID00059 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_PriceCalculationRecordCoun"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Number of observed values usable for price calculations."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_PriceCalculationRecordCoun"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00059 .
+
+adage:MID00087 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_StandardDeviationPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. This shows how much variation exists between the observed values and the GeometricMeanPrice."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_StandardDeviationPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00087 .
+
+adage:MID00063 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "For_Sale_Both_Auction_Private_Treaty_TotalPrice"^^rdfs:Literal ;
+                   rdfs:comment "For Sale - Both Auction & Private Treaty. Sum of total values."^^rdfs:Literal ;
+                   rdfs:label "For_Sale_Both_Auction_Private_Treaty_TotalPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00063 .
+
+adage:MID00120 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Gross_Rental_Yield"^^rdfs:Literal ;
+                   rdfs:comment "The average gross amount of rent received for properties against their respective price."^^rdfs:Literal ;
+                   rdfs:label "Gross_Rental_Yield"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00120 .
+
+adage:MID00002 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   rdfs:label "House Price"^^rdfs:Literal .
+
+adage:SREF00001   analytics:containMeasure adage:MID00002 .
+
+adage:MID00001 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   rdfs:label "Housing Demand"^^rdfs:Literal .
+
+adage:SREF00001   analytics:containMeasure adage:MID00001 .
+
+adage:MID00189 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AE"^^rdfs:Literal ;
+                   rdfs:comment "Improvements value component of the CV"^^rdfs:Literal ;
+                   rdfs:label "Improvements_Value"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00189 .
+
+adage:MID00259 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AF"^^rdfs:Literal ;
+                   rdfs:comment "Improvements value component of the CV"^^rdfs:Literal ;
+                   rdfs:label "Improvements_Value"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00259 .
+
+adage:MID00181 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "X"^^rdfs:Literal ;
+                   rdfs:comment "Land area in hectares"^^rdfs:Literal ;
+                   rdfs:label "Land_Area_Adjusted"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00181 .
+
+adage:MID00252 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "X"^^rdfs:Literal ;
+                   rdfs:comment "Land area in hectares"^^rdfs:Literal ;
+                   rdfs:label "Land_Area_Adjusted"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00252 .
+
+adage:MID00173 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "P"^^rdfs:Literal ;
+                   rdfs:comment "Land use code of the subject property"^^rdfs:Literal ;
+                   rdfs:label "Land_Use_Code"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00173 .
+
+adage:MID00174 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Q"^^rdfs:Literal ;
+                   rdfs:comment "Description of the land use code"^^rdfs:Literal ;
+                   rdfs:label "Land_Use_Description"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00174 .
+
+adage:MID00188 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AD"^^rdfs:Literal ;
+                   rdfs:comment "Land value component of the CV"^^rdfs:Literal ;
+                   rdfs:label "Land_Value"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00188 .
+
+adage:MID00258 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AE"^^rdfs:Literal ;
+                   rdfs:comment "Land value component of the CV"^^rdfs:Literal ;
+                   rdfs:label "Land_Value"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00258 .
+
+adage:MID00136 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "17"^^rdfs:Literal ;
+                   rdfs:comment "X Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Latitude"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00136 .
+
+adage:MID00171 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "N"^^rdfs:Literal ;
+                   rdfs:comment "X Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Latitude"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00171 .
+
+adage:MID00207 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "17"^^rdfs:Literal ;
+                   rdfs:comment "X Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Latitude"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00207 .
+
+adage:MID00242 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "N"^^rdfs:Literal ;
+                   rdfs:comment "X Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Latitude"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00242 .
+
+adage:MID00133 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "14"^^rdfs:Literal ;
+                   rdfs:comment "Local Government Authority, Municipality (Vic) or Valuation District (NT) Code supplied by the Valuer General's office."^^rdfs:Literal ;
+                   rdfs:label "LGA Code"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00133 .
+
+adage:MID00204 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "14"^^rdfs:Literal ;
+                   rdfs:comment "Local Government Authority, Municipality (Vic) or Valuation District (NT) Code supplied by the Valuer General's office."^^rdfs:Literal ;
+                   rdfs:label "LGA Code"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00204 .
+
+adage:MID00134 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "15"^^rdfs:Literal ;
+                   rdfs:comment "Local Government Authority, Municipality (Vic) or Valuation District (NT) Name supplied by the Valuer General's office."^^rdfs:Literal ;
+                   rdfs:label "LGA Name"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00134 .
+
+adage:MID00205 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "15"^^rdfs:Literal ;
+                   rdfs:comment "Local Government Authority Name, Municipality (Vic) or Valuation District (NT) supplied by the Valuer General's office."^^rdfs:Literal ;
+                   rdfs:label "LGA Name"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00205 .
+
+adage:MID00210 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "20"^^rdfs:Literal ;
+                   rdfs:comment "The listing category of the property.  For example, For Sale of  For Rent"^^rdfs:Literal ;
+                   rdfs:label "Listing Category"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00210 .
+
+adage:MID00211 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "21"^^rdfs:Literal ;
+                   rdfs:comment "The listing type of the property (if available).  For example, Normal Sale, Auction, Tender."^^rdfs:Literal ;
+                   rdfs:label "Listing Type"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00211 .
+
+adage:MID00244 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "P"^^rdfs:Literal ;
+                   rdfs:comment "For Rent or For Sale**"^^rdfs:Literal ;
+                   rdfs:label "Listing_Category"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00244 .
+
+adage:MID00245 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Q"^^rdfs:Literal ;
+                   rdfs:comment "Period of rental payments**"^^rdfs:Literal ;
+                   rdfs:label "Listing_Rental_Period"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00245 .
+
+adage:MID00165 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "H"^^rdfs:Literal ;
+                   rdfs:comment "Unit Number of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Locality_ID"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00165 .
+
+adage:MID00236 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "H"^^rdfs:Literal ;
+                   rdfs:comment "Unit Number of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Locality_ID"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00236 .
+
+adage:MID00137 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "18"^^rdfs:Literal ;
+                   rdfs:comment "Y Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Longitude"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00137 .
+
+adage:MID00172 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "O"^^rdfs:Literal ;
+                   rdfs:comment "Y Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Longitude"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00172 .
+
+adage:MID00208 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "18"^^rdfs:Literal ;
+                   rdfs:comment "Y Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Longitude"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00208 .
+
+adage:MID00243 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "O"^^rdfs:Literal ;
+                   rdfs:comment "Y Co-ordinate"^^rdfs:Literal ;
+                   rdfs:label "Longitude"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00243 .
+
+adage:MID00135 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "16"^^rdfs:Literal ;
+                   rdfs:comment "Labels for the smallest geographic areas covering all of Australia without gaps or overlaps.  The most recent Australian Statistical Geography Standard (ASGS) definitions from 2011 contain"^^rdfs:Literal ;
+                   rdfs:label "Mesh Block"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00135 .
+
+adage:MID00206 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "16"^^rdfs:Literal ;
+                   rdfs:comment "Labels for the smallest geographic areas covering all of Australia without gaps or overlaps.  The most recent Australian Statistical Geography Standard (ASGS) definitions from 2011 contain"^^rdfs:Literal ;
+                   rdfs:label "Mesh Block"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00206 .
+
+adage:MID00247 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "S"^^rdfs:Literal ;
+                   rdfs:comment "Listings’s first recent advertised listing method"^^rdfs:Literal ;
+                   rdfs:label "Method_First"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00247 .
+
+adage:MID00249 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "U"^^rdfs:Literal ;
+                   rdfs:comment "Listings’s most recent advertised listing method"^^rdfs:Literal ;
+                   rdfs:label "Method_Last"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00249 .
+
+adage:MID00221 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "31"^^rdfs:Literal ;
+                   rdfs:comment "The date the listing was most recently published / seen."^^rdfs:Literal ;
+                   rdfs:label "Most Recent  Listing Date"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00221 .
+
+adage:MID00218 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "28"^^rdfs:Literal ;
+                   rdfs:comment "The listing’s most recent advertised price. For rental properties, this will be the weekly rental price."^^rdfs:Literal ;
+                   rdfs:label "Most Recent  Listing Price From"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00218 .
+
+adage:MID00219 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "29"^^rdfs:Literal ;
+                   rdfs:comment "The listing’s most recent advertised price upper limit For rental properties, this will be the weekly rental price."^^rdfs:Literal ;
+                   rdfs:label "Most Recent  Listing Price To"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00219 .
+
+adage:MID00217 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "27"^^rdfs:Literal ;
+                   rdfs:comment "A textual description of the price"^^rdfs:Literal ;
+                   rdfs:label "Most Recent Price Desc"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00217 .
+
+adage:MID00216 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "26"^^rdfs:Literal ;
+                   rdfs:comment "A code for rental listings identifying the period used to describe the rental price in Price Desc column. A(nnual),M(onthly),F(ortnightly) or W(eekly)"^^rdfs:Literal ;
+                   rdfs:label "Most Recent Rental Period"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00216 .
+
+adage:MID00251 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "W"^^rdfs:Literal ;
+                   rdfs:comment "The date the listing was most recently published/seen"^^rdfs:Literal ;
+                   rdfs:label "Most_Recent_Date"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00251 .
+
+adage:MID00131 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "12"^^rdfs:Literal ;
+                   rdfs:comment "Postcode of Property."^^rdfs:Literal ;
+                   rdfs:label "Postcode"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00131 .
+
+adage:MID00167 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "J"^^rdfs:Literal ;
+                   rdfs:comment "Starting Street Number of Property."^^rdfs:Literal ;
+                   rdfs:label "Postcode"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00167 .
+
+adage:MID00202 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "12"^^rdfs:Literal ;
+                   rdfs:comment "Postcode of Property."^^rdfs:Literal ;
+                   rdfs:label "Postcode"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00202 .
+
+adage:MID00238 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "J"^^rdfs:Literal ;
+                   rdfs:comment "Starting Street Number of Property."^^rdfs:Literal ;
+                   rdfs:label "Postcode"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00238 .
+
+adage:MID00246 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "R"^^rdfs:Literal ;
+                   rdfs:comment "Listings’s first advertised price"^^rdfs:Literal ;
+                   rdfs:label "Price_First"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00246 .
+
+adage:MID00248 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "T"^^rdfs:Literal ;
+                   rdfs:comment "Listings’s most recent advertised price"^^rdfs:Literal ;
+                   rdfs:label "Price_Last"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00248 .
+
+adage:MID00140 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "21"^^rdfs:Literal ;
+                   rdfs:comment "Primary Land Use Description supplied by the Valuer General's Office."^^rdfs:Literal ;
+                   rdfs:label "Primary Land Use Description"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00140 .
+
+adage:MID00139 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "20"^^rdfs:Literal ;
+                   rdfs:comment "Primary Land Use Code supplied by the Valuer General's Office.  Land use codes indicate what the government allows to occur on this land e.g. Residential,Commercial etc."^^rdfs:Literal ;
+                   rdfs:label "Primary Land Use Code"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00139 .
+
+adage:MID00147 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "28"^^rdfs:Literal ;
+                   rdfs:comment "RP Data Internal Property ID.  This is for internal use only and has been provided in the event we need to provide SIRCA with support."^^rdfs:Literal ;
+                   rdfs:label "Property ID"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00147 .
+
+adage:MID00222 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "32"^^rdfs:Literal ;
+                   rdfs:comment "RP Data Internal Property ID.  This is for internal use only and has been provided in the event we need to provide SIRCA with support."^^rdfs:Literal ;
+                   rdfs:label "Property ID"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00222 .
+
+adage:MID00138 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "19"^^rdfs:Literal ;
+                   rdfs:comment "Property Type.  E.g. House, Unit, Flat, Land."^^rdfs:Literal ;
+                   rdfs:label "Property Type"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00138 .
+
+adage:MID00209 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "19"^^rdfs:Literal ;
+                   rdfs:comment "Property Type.  E.g. House, Unit, Flat, Land."^^rdfs:Literal ;
+                   rdfs:label "Property Type"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00209 .
+
+adage:MID00170 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "M"^^rdfs:Literal ;
+                   rdfs:comment "Property type"^^rdfs:Literal ;
+                   rdfs:label "Property_Type"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00170 .
+
+adage:MID00241 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "M"^^rdfs:Literal ;
+                   rdfs:comment "Property type"^^rdfs:Literal ;
+                   rdfs:label "Property_Type"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00241 .
+
+adage:MID00012 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "PropertyCategorisation"^^rdfs:Literal ;
+                   rdfs:comment "Category of property"^^rdfs:Literal ;
+                   rdfs:label "PropertyCategorisation"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00012 .
+
+adage:MID00260 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AF"^^rdfs:Literal ;
+                   rdfs:comment "Date the CV assessment was made"^^rdfs:Literal ;
+                   rdfs:label "Revision_Date"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00260 .
+
+adage:MID00146 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "27"^^rdfs:Literal ;
+                   rdfs:comment "Flag to determine if the sale record was supplied by RP Data or the Valuer Generals.  Will contain “RP” or “VG”."^^rdfs:Literal ;
+                   rdfs:label "RP or VG flag"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00146 .
+
+adage:MID00155 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "36"^^rdfs:Literal ;
+                   rdfs:comment "Number of Bathrooms of property"^^rdfs:Literal ;
+                   rdfs:label "RP_Bathrooms"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00155 .
+
+adage:MID00226 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "36"^^rdfs:Literal ;
+                   rdfs:comment "Number of Bathrooms of property"^^rdfs:Literal ;
+                   rdfs:label "RP_Bathrooms"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00226 .
+
+adage:MID00156 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "37"^^rdfs:Literal ;
+                   rdfs:comment "Number of Bathrooms of property derived by RP Data"^^rdfs:Literal ;
+                   rdfs:label "RP_Bathrooms_Derived"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00156 .
+
+adage:MID00153 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "34"^^rdfs:Literal ;
+                   rdfs:comment "Number of Bedrooms of property"^^rdfs:Literal ;
+                   rdfs:label "RP_Bedrooms"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00153 .
+
+adage:MID00225 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "35"^^rdfs:Literal ;
+                   rdfs:comment "Number of Bedrooms of property"^^rdfs:Literal ;
+                   rdfs:label "RP_Bedrooms"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00225 .
+
+adage:MID00154 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "35"^^rdfs:Literal ;
+                   rdfs:comment "Number of Bedrooms of property derived by RP Data"^^rdfs:Literal ;
+                   rdfs:label "RP_Bedrooms_Derived"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00154 .
+
+adage:MID00157 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "37"^^rdfs:Literal ;
+                   rdfs:comment "Number of Car Spaces of property"^^rdfs:Literal ;
+                   rdfs:label "RP_Car_Spaces"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00157 .
+
+adage:MID00227 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "38"^^rdfs:Literal ;
+                   rdfs:comment "Number of Car Spaces of property"^^rdfs:Literal ;
+                   rdfs:label "RP_Car_Spaces"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00227 .
+
+adage:MID00151 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "32"^^rdfs:Literal ;
+                   rdfs:comment "Estimated land area of property as determined by RP Data in Square Metres"^^rdfs:Literal ;
+                   rdfs:label "RP_Est_Land_Area"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00151 .
+
+adage:MID00152 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "33"^^rdfs:Literal ;
+                   rdfs:comment "Land area sourced from the listing advertisement."^^rdfs:Literal ;
+                   rdfs:label "RP_Listing_Area"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00152 .
+
+adage:MID00224 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "34"^^rdfs:Literal ;
+                   rdfs:comment "Land area sourced from the listing advertisement."^^rdfs:Literal ;
+                   rdfs:label "RP_Listing_Area"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00224 .
+
+adage:MID00158 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "38"^^rdfs:Literal ;
+                   rdfs:comment "Number of Lockup Garages"^^rdfs:Literal ;
+                   rdfs:label "RP_Lockup_Garage"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00158 .
+
+adage:MID00228 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "39"^^rdfs:Literal ;
+                   rdfs:comment "Number of Lockup Garages"^^rdfs:Literal ;
+                   rdfs:label "RP_Lockup_Garage"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00228 .
+
+adage:MID00149 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "30"^^rdfs:Literal ;
+                   rdfs:comment "Sale method as derived from the Recent Sale Event."^^rdfs:Literal ;
+                   rdfs:label "RP_Method_of_Sale"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00149 .
+
+adage:MID00229 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "39"^^rdfs:Literal ;
+                   rdfs:comment "Rental Discount calculated by the differences between first and last published rental values for the properties rental campaign. If the discount is negative, meaning an increase in rental values has been applied."^^rdfs:Literal ;
+                   rdfs:label "RP_Rental_Discount"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00229 .
+
+adage:MID00150 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "31"^^rdfs:Literal ;
+                   rdfs:comment "Land area of property as supplied by the Valuer Generals in Square Metres."^^rdfs:Literal ;
+                   rdfs:label "RP_VG_Land_Area"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00150 .
+
+adage:MID00007 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "SA22011Code"^^rdfs:Literal ;
+                   rdfs:comment "Official Government Reference unique ID assigned to each Statistical Area SA2-9 digit."^^rdfs:Literal ;
+                   rdfs:label "SA42011Code"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00007 .
+
+adage:MID00004 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "SA22011ID"^^rdfs:Literal ;
+                   rdfs:comment "Shortened code generated from 2011 Code (1 to 2207 for SA2)."^^rdfs:Literal ;
+                   rdfs:label "SA42011ID"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00004 .
+
+adage:MID00006 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "SA22011Name"^^rdfs:Literal ;
+                   rdfs:comment "Name of statistical area."^^rdfs:Literal ;
+                   rdfs:label "SA42011Name"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00006 .
+
+adage:MID00005 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "SA22011Pid"^^rdfs:Literal ;
+                   rdfs:comment "Full ABS generated unique ID assigned to each Statistical Area (SA2-10 digit)."^^rdfs:Literal ;
+                   rdfs:label "SA42011Pid"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00005 .
+
+adage:MID00144 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "25"^^rdfs:Literal ;
+                   rdfs:comment "Sale Type Code supplied by the Valuer General's Office."^^rdfs:Literal ;
+                   rdfs:label "Sale Type Code"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00144 .
+
+adage:MID00145 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "26"^^rdfs:Literal ;
+                   rdfs:comment "Sale Type Description supplied by the Valuer General's Office."^^rdfs:Literal ;
+                   rdfs:label "Sale Type Description"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00145 .
+
+adage:MID00176 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "S"^^rdfs:Literal ;
+                   rdfs:comment "Date the sale was agreed"^^rdfs:Literal ;
+                   rdfs:label "Sale_Agreement_Date"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00176 .
+
+adage:MID00186 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AC"^^rdfs:Literal ;
+                   rdfs:comment "Capital Value at time of sale"^^rdfs:Literal ;
+                   rdfs:label "Sale_Capital_Value"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00186 .
+
+adage:MID00180 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "W"^^rdfs:Literal ;
+                   rdfs:comment "ID for the sale. This is for internal use only and has been provided in the event we need to provide SIRCA with support"^^rdfs:Literal ;
+                   rdfs:label "Sale_ID"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00180 .
+
+adage:MID00175 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "R"^^rdfs:Literal ;
+                   rdfs:comment "Total sale price"^^rdfs:Literal ;
+                   rdfs:label "Sale_Price_Gross"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00175 .
+
+adage:MID00177 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "T"^^rdfs:Literal ;
+                   rdfs:comment "Date the sale was finalised"^^rdfs:Literal ;
+                   rdfs:label "Sale_Settlement_Date"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00177 .
+
+adage:MID00178 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "U"^^rdfs:Literal ;
+                   rdfs:comment "Code for the type of sale"^^rdfs:Literal ;
+                   rdfs:label "Sale_Type_Code"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00178 .
+
+adage:MID00179 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "V"^^rdfs:Literal ;
+                   rdfs:comment "Description of the type of sale"^^rdfs:Literal ;
+                   rdfs:label "Sale_Type_Description"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00179 .
+
+adage:MID00143 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "24"^^rdfs:Literal ;
+                   rdfs:comment "Settlement date of transfer which indicates that the title for the property has changed hands.  Currently available for Qld, NSW, Vic, NT and SA."^^rdfs:Literal ;
+                   rdfs:label "Settlement Date"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00143 .
+
+adage:MID00160 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "C"^^rdfs:Literal ;
+                   rdfs:comment "Street number"^^rdfs:Literal ;
+                   rdfs:label "Situation_Number"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00160 .
+
+adage:MID00231 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "C"^^rdfs:Literal ;
+                   rdfs:comment "Street number"^^rdfs:Literal ;
+                   rdfs:label "Situation_Number"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00231 .
+
+adage:MID00159 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "B"^^rdfs:Literal ;
+                   rdfs:comment "Prefix to street number"^^rdfs:Literal ;
+                   rdfs:label "Situation_Number_Prefix"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00159 .
+
+adage:MID00230 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "B"^^rdfs:Literal ;
+                   rdfs:comment "Prefix to street number"^^rdfs:Literal ;
+                   rdfs:label "Situation_Number_Prefix"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00230 .
+
+adage:MID00161 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "D"^^rdfs:Literal ;
+                   rdfs:comment "Suffix to street number"^^rdfs:Literal ;
+                   rdfs:label "Situation_Number_Suffix"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00161 .
+
+adage:MID00232 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "D"^^rdfs:Literal ;
+                   rdfs:comment "Suffix to street number"^^rdfs:Literal ;
+                   rdfs:label "Situation_Number_Suffix"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00232 .
+
+adage:MID00091 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_AveragePrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Sum of total values divided by the number of values observed"^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_AveragePrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00091 .
+
+adage:MID00099 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition05Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 5th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition05Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00099 .
+
+adage:MID00100 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition10Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 10th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition10Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00100 .
+
+adage:MID00101 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition15Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 15th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition15Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00101 .
+
+adage:MID00102 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition20Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 20th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition20Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00102 .
+
+adage:MID00103 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition25Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 25th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition25Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00103 .
+
+adage:MID00104 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition30Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 30th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition30Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00104 .
+
+adage:MID00105 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition35Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 35th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition35Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00105 .
+
+adage:MID00106 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition40Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 40th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition40Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00106 .
+
+adage:MID00107 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition45Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 45th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition45Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00107 .
+
+adage:MID00108 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition50Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 50th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition50Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00108 .
+
+adage:MID00109 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition55Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 55th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition55Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00109 .
+
+adage:MID00110 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition60Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 60th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition60Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00110 .
+
+adage:MID00111 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition65Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 65th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition65Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00111 .
+
+adage:MID00112 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition70Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 70th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition70Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00112 .
+
+adage:MID00113 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition75Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 75th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition75Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00113 .
+
+adage:MID00114 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition80Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 80th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition80Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00114 .
+
+adage:MID00115 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition85Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 85th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition85Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00115 .
+
+adage:MID00116 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition90Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 95th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition90Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00116 .
+
+adage:MID00117 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPosition95Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 95th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPosition95Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00117 .
+
+adage:MID00098 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_DetailedPriceCalculationRecord"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Number of observed values usable for detailed position price calculations."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_DetailedPriceCalculationRecord"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00098 .
+
+adage:MID00089 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_EventCount"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Number of observations for defined aggregated statistic."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_EventCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00089 .
+
+adage:MID00119 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_GeometricMeanPrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. The n'th root product of 'n' values."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_GeometricMeanPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00119 .
+
+adage:MID00092 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_MaximumPrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. The highest observation."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_MaximumPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00092 .
+
+adage:MID00095 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_MedianPrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Middle value in a range of values, 50th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_MedianPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00095 .
+
+adage:MID00093 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_MinimumPrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. The lowest observation."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_MinimumPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00093 .
+
+adage:MID00096 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_Position25Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 25th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_Position25Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00096 .
+
+adage:MID00097 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_Position75Price"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Value occurring at the 75th percentile rank of the data set, arranged from lowest to highest."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_Position75Price"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00097 .
+
+adage:MID00090 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_PriceCalculationRecordCount"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Number of observed values usable for price calculations."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_PriceCalculationRecordCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00090 .
+
+adage:MID00118 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_StandardDeviationPrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. This shows how much variation exists between the observed values and the GeometricMeanPrice."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_StandardDeviationPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00118 .
+
+adage:MID00094 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_Both_Auction_Private_Treaty_TotalPrice"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Both Auction & Private Treaty. Sum of total values."^^rdfs:Literal ;
+                   rdfs:label "Sold_Both_Auction_Private_Treaty_TotalPrice"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00094 .
+
+adage:MID00014 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "AverageDiscount"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Private Treaty. Average Discounting applied to sold properties via private treaty (comparing first listing price and actual sold price)."^^rdfs:Literal ;
+                   rdfs:label "Sold_Private_Treaty_AverageDiscount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00014 .
+
+adage:MID00015 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "DaysOnMarketRecordCount"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Private Treaty. Number of observations that 'Private Treaty Cycle Average Discount' is calculated from."^^rdfs:Literal ;
+                   rdfs:label "Sold_Private_Treaty_DaysOnMarketRecordCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00015 .
+
+adage:MID00016 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "DiscountRecordCount"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Private Treaty. Number of observations that 'Private Treaty Cycle Average Discount' is calculated from."^^rdfs:Literal ;
+                   rdfs:label "Sold_Private_Treaty_DiscountRecordCount"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00016 .
+
+adage:MID00013 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "Sold_PrivateTreaty_AverageDaysOnMarket"^^rdfs:Literal ;
+                   rdfs:comment "Sold - Private Treaty. Average number of days it takes to sell a property via Private Treaty."^^rdfs:Literal ;
+                   rdfs:label "Sold_PrivateTreaty_AverageDaysOnMarket"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00013 .
+
+adage:MID00008 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "State"^^rdfs:Literal ;
+                   rdfs:comment "Name of state."^^rdfs:Literal ;
+                   rdfs:label "State"^^rdfs:Literal .
+
+adage:SREF00002   analytics:containMeasure adage:MID00008 .
+
+adage:MID00132 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "13"^^rdfs:Literal ;
+                   rdfs:comment "Abbreviated State of Property."^^rdfs:Literal ;
+                   rdfs:label "State"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00132 .
+
+adage:MID00203 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "13"^^rdfs:Literal ;
+                   rdfs:comment "Abbreviated State of Property."^^rdfs:Literal ;
+                   rdfs:label "State"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00203 .
+
+adage:MID00126 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "7"^^rdfs:Literal ;
+                   rdfs:comment "Ending Street Alpha of Property."^^rdfs:Literal ;
+                   rdfs:label "Street Alpha End"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00126 .
+
+adage:MID00197 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "7"^^rdfs:Literal ;
+                   rdfs:comment "Ending Street Alpha of Property."^^rdfs:Literal ;
+                   rdfs:label "Street Alpha End"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00197 .
+
+adage:MID00124 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "5"^^rdfs:Literal ;
+                   rdfs:comment "Starting Street Alpha of Property."^^rdfs:Literal ;
+                   rdfs:label "Street Alpha Start"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00124 .
+
+adage:MID00195 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "5"^^rdfs:Literal ;
+                   rdfs:comment "Starting Street Alpha of Property."^^rdfs:Literal ;
+                   rdfs:label "Street Alpha Start"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00195 .
+
+adage:MID00129 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "10"^^rdfs:Literal ;
+                   rdfs:comment "Direction of the street."^^rdfs:Literal ;
+                   rdfs:label "Street Direction"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00129 .
+
+adage:MID00200 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "10"^^rdfs:Literal ;
+                   rdfs:comment "Direction of the street."^^rdfs:Literal ;
+                   rdfs:label "Street Direction"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00200 .
+
+adage:MID00127 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "8"^^rdfs:Literal ;
+                   rdfs:comment "Street Name of the property."^^rdfs:Literal ;
+                   rdfs:label "Street Name"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00127 .
+
+adage:MID00198 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "8"^^rdfs:Literal ;
+                   rdfs:comment "Street Name of the property."^^rdfs:Literal ;
+                   rdfs:label "Street Name"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00198 .
+
+adage:MID00125 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "6"^^rdfs:Literal ;
+                   rdfs:comment "Ending Street Number of Property.  Street number end is left blank if the property does not have a street number range."^^rdfs:Literal ;
+                   rdfs:label "Street Number End"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00125 .
+
+adage:MID00196 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "6"^^rdfs:Literal ;
+                   rdfs:comment "Ending Street Number of Property.  Street number end is left blank if the property does not have a street number range."^^rdfs:Literal ;
+                   rdfs:label "Street Number End"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00196 .
+
+adage:MID00123 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "4"^^rdfs:Literal ;
+                   rdfs:comment "Starting Street Number of Property."^^rdfs:Literal ;
+                   rdfs:label "Street Number Start"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00123 .
+
+adage:MID00194 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "4"^^rdfs:Literal ;
+                   rdfs:comment "Starting Street Number of Property."^^rdfs:Literal ;
+                   rdfs:label "Street Number Start"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00194 .
+
+adage:MID00128 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "9"^^rdfs:Literal ;
+                   rdfs:comment "Street Type of the property."^^rdfs:Literal ;
+                   rdfs:label "Street Type"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00128 .
+
+adage:MID00199 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "9"^^rdfs:Literal ;
+                   rdfs:comment "Street Type of the property."^^rdfs:Literal ;
+                   rdfs:label "Street Type"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00199 .
+
+adage:MID00164 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "G"^^rdfs:Literal ;
+                   rdfs:comment "A unique Identifier for the Property.  This identifier does not include any intelligence, is generated by SIRCA and is persistent."^^rdfs:Literal ;
+                   rdfs:label "Street_Direction"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00164 .
+
+adage:MID00235 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "G"^^rdfs:Literal ;
+                   rdfs:comment "A unique Identifier for the Property.  This identifier does not include any intelligence, is generated by SIRCA and is persistent."^^rdfs:Literal ;
+                   rdfs:label "Street_Direction"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00235 .
+
+adage:MID00162 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "E"^^rdfs:Literal ;
+                   rdfs:comment "Street name of the property"^^rdfs:Literal ;
+                   rdfs:label "Street_Name"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00162 .
+
+adage:MID00233 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "E"^^rdfs:Literal ;
+                   rdfs:comment "Street name of the property"^^rdfs:Literal ;
+                   rdfs:label "Street_Name"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00233 .
+
+adage:MID00163 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "F"^^rdfs:Literal ;
+                   rdfs:comment "Street type of the property"^^rdfs:Literal ;
+                   rdfs:label "Street_Type"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00163 .
+
+adage:MID00234 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "F"^^rdfs:Literal ;
+                   rdfs:comment "Street type of the property"^^rdfs:Literal ;
+                   rdfs:label "Street_Type"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00234 .
+
+adage:MID00130 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "11"^^rdfs:Literal ;
+                   rdfs:comment "Suburb of Property according to each state's Valuer Generals Office."^^rdfs:Literal ;
+                   rdfs:label "Suburb"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00130 .
+
+adage:MID00166 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "I"^^rdfs:Literal ;
+                   rdfs:comment "Unit Alpha of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Suburb"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00166 .
+
+adage:MID00201 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "11"^^rdfs:Literal ;
+                   rdfs:comment "Suburb of Property according to each state's Valuer Generals Office."^^rdfs:Literal ;
+                   rdfs:label "Suburb"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00201 .
+
+adage:MID00237 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "I"^^rdfs:Literal ;
+                   rdfs:comment "Unit Alpha of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Suburb"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00237 .
+
+adage:MID00168 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "K"^^rdfs:Literal ;
+                   rdfs:comment "Territorial authority code"^^rdfs:Literal ;
+                   rdfs:label "TA_Code"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00168 .
+
+adage:MID00239 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "K"^^rdfs:Literal ;
+                   rdfs:comment "Territorial authority code"^^rdfs:Literal ;
+                   rdfs:label "TA_Code"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00239 .
+
+adage:MID00169 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "L"^^rdfs:Literal ;
+                   rdfs:comment "Territorial authority name"^^rdfs:Literal ;
+                   rdfs:label "TA_Name"^^rdfs:Literal .
+
+adage:SREF00004   analytics:containMeasure adage:MID00169 .
+
+adage:MID00240 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "L"^^rdfs:Literal ;
+                   rdfs:comment "Territorial authority name"^^rdfs:Literal ;
+                   rdfs:label "TA_Name"^^rdfs:Literal .
+
+adage:SREF00006   analytics:containMeasure adage:MID00240 .
+
+adage:MID00148 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "29"^^rdfs:Literal ;
+                   rdfs:comment "RP Data Internal Transfer ID.  This is for internal use only and has been provided in the event we need to provide SIRCA with support."^^rdfs:Literal ;
+                   rdfs:label "Transfer ID"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00148 .
+
+adage:MID00122 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "3"^^rdfs:Literal ;
+                   rdfs:comment "Unit Alpha of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Unit Alpha"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00122 .
+
+adage:MID00121 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "2"^^rdfs:Literal ;
+                   rdfs:comment "Unit Number of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Unit Number"^^rdfs:Literal .
+
+adage:SREF00003   analytics:containMeasure adage:MID00121 .
+
+adage:MID00192 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   analytics:measureReferenceInDatasource "3"^^rdfs:Literal ;
+                   rdfs:comment "Unit Alpha of Property.  Unit number is left blank if the property is a single residence."^^rdfs:Literal ;
+                   rdfs:label "Unit Number"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00192 .
+
+adage:MID00193 rdf:type owl:NamedIndividual , analytics:Measure ;
+                   rdfs:label "Unit Number Alpha"^^rdfs:Literal .
+
+adage:SREF00005   analytics:containMeasure adage:MID00193 .
+

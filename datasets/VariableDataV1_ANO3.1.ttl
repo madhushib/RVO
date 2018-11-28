@@ -1,0 +1,948 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#>.
+@prefix analytics: <http://www.adage.unsw.edu.au/analytics#> .
+
+adage:VID00001 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00001;
+                                analytics:operationalize dbr:Economics,dbr:Housing,dbr:Demand,dbr:Aggregate_demand;
+                                analytics:origin adage:REF0001,adage:REF0005;
+                                rdfs:label "Housing Demand"^^rdfs:Literal.
+adage:VID00002 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00002;
+                                analytics:operationalize dbr:Economics,dbr:Housing,dbr:Price,dbr:Macroeconomics;
+                                analytics:origin adage:REF0001,adage:REF0006,adage:REF0010;
+                                rdfs:label "House Price"^^rdfs:Literal.
+adage:VID00003 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00003;
+                                analytics:operationalize dbr:Economics,dbr:Age,dbr:Age_group,dbr:Cohort;
+                                analytics:origin adage:REF0001;
+                                rdfs:label "Age Cohort"^^rdfs:Literal.
+adage:VID00004 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00004,adage:MID00005;
+                                analytics:operationalize dbr:Economics,dbr:Housing,dbr:Real_estate,dbr:Index;
+                                analytics:origin adage:REF0003;
+                                rdfs:label "Case–Shiller index"^^rdfs:Literal.
+adage:VID00005 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Housing,dbr:Real_estate,dbr:Pricing,dbr:Sales;
+                                analytics:origin adage:REF0003;
+                                rdfs:label "House sale price"^^rdfs:Literal.
+adage:VID00006 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00007;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Gdp;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "gross domestic product (GDP) "^^rdfs:Literal.
+adage:VID00007 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00008;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Cpi;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "consumer price index inflation (CPI) "^^rdfs:Literal.
+adage:VID00008 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00009;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Demography;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Population"^^rdfs:Literal.
+adage:VID00009 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00010;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Income;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Unemplyment Rate"^^rdfs:Literal.
+adage:VID00010 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00011;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Income;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Disposable Income"^^rdfs:Literal.
+adage:VID00011 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00012;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Housing Permits"^^rdfs:Literal.
+adage:VID00012 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00013;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Rate;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Mortgage Rate"^^rdfs:Literal.
+adage:VID00013 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00014;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Current_account;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Account Balance"^^rdfs:Literal.
+adage:VID00014 rdf:type owl:NamedIndividual,analytics:Variable;
+                                analytics:measuredBy adage:MID00015;
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Rate;
+                                analytics:origin adage:REF0006;
+                                rdfs:label "Exchange Rate"^^rdfs:Literal.
+adage:VID00015 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Index;
+                                analytics:origin adage:REF0024;
+                                rdfs:label "House Price Index"^^rdfs:Literal.
+adage:VID00016 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:House,dbr:Rentals;
+                                analytics:origin adage:REF0024;
+                                rdfs:label "House Rents"^^rdfs:Literal.
+adage:VID00017 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Construction,dbr:Cost_of_capital;
+                                analytics:origin adage:REF0024;
+                                rdfs:label "House Cost of Capital"^^rdfs:Literal.
+adage:VID00018 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Demography;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Demographics"^^rdfs:Literal.
+adage:VID00019 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Real_estate,dbr:Demand,dbr:Willingness_to_pay;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "House Willingness to Pay"^^rdfs:Literal.
+adage:VID00020 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "House age"^^rdfs:Literal.
+adage:VID00021 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Number of bedrooms"^^rdfs:Literal.
+adage:VID00022 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Number of other rooms "^^rdfs:Literal.
+adage:VID00023 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House,dbr:Real_estate,dbr:Residence;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Tenure "^^rdfs:Literal.
+adage:VID00024 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "House Distance to CBD"^^rdfs:Literal.
+adage:VID00025 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Population,dbr:Real_estate,dbr:Demography;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Population density (per square mile) "^^rdfs:Literal.
+adage:VID00026 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Demography,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Race/Ethnicity"^^rdfs:Literal.
+adage:VID00027 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Demography,dbr:Real_estate,dbr:Population;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Marital Status "^^rdfs:Literal.
+adage:VID00028 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Demography,dbr:Real_estate,dbr:Population;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Education Level"^^rdfs:Literal.
+adage:VID00029 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Demography,dbr:Real_estate,dbr:Urban;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Length of Residence"^^rdfs:Literal.
+adage:VID00030 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Income,dbr:Real_estate,dbr:Income;
+                                analytics:origin adage:REF0005;
+                                rdfs:label "Household Income"^^rdfs:Literal.
+adage:VID00031 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House,dbr:Real_estate,dbr:Urban,dbr:Infrastructure;
+                                analytics:origin adage:REF0010;
+                                rdfs:label "Housing Value per unit of land"^^rdfs:Literal.
+adage:VID00032 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Price,dbr:Real_estate,dbr:Infrastructure;
+                                analytics:origin adage:REF0010;
+                                rdfs:label "Price per unit of land"^^rdfs:Literal.
+adage:VID00033 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Urban,dbr:Real_estate,dbr:Infrastructure;
+                                analytics:origin adage:REF0010;
+                                rdfs:label "Railway"^^rdfs:Literal.
+adage:VID00034 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Urban,dbr:Real_estate,dbr:Infrastructure;
+                                analytics:origin adage:REF0010;
+                                rdfs:label "Highway"^^rdfs:Literal.
+adage:VID00035 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:House_sale,dbr:Real_estate,dbr:House,dbr:Auction;
+                                analytics:origin adage:REF0010;
+                                rdfs:label "Auction Type"^^rdfs:Literal.
+adage:VID00036 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Supply,dbr:Real_estate,dbr:Macroeconomics;
+                                analytics:origin adage:REF0010;
+                                rdfs:label "House Supply"^^rdfs:Literal.
+adage:VID00037 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Real Gross Domestic Product (real GDP)"^^rdfs:Literal.
+adage:VID00038 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM (Chain Volume Measure) Household Cons Food "^^rdfs:Literal.
+adage:VID00039 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Cigarettes and tobacco"^^rdfs:Literal.
+adage:VID00040 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Alcoholic beverages"^^rdfs:Literal.
+adage:VID00041 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Clothing and footwear "^^rdfs:Literal.
+adage:VID00042 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Rent and other dwelling services"^^rdfs:Literal.
+adage:VID00043 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Electricity, gas and other fuel"^^rdfs:Literal.
+adage:VID00044 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Furnishings and household equipment "^^rdfs:Literal.
+adage:VID00045 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Health"^^rdfs:Literal.
+adage:VID00046 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Purchase of vehicles"^^rdfs:Literal.
+adage:VID00047 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Operation of vehicles"^^rdfs:Literal.
+adage:VID00048 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Transport services"^^rdfs:Literal.
+adage:VID00049 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Communications"^^rdfs:Literal.
+adage:VID00050 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Recreation and culture"^^rdfs:Literal.
+adage:VID00051 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Education services"^^rdfs:Literal.
+adage:VID00052 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Hotels, cafes and restaurants"^^rdfs:Literal.
+adage:VID00053 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Insurance and other financial services "^^rdfs:Literal.
+adage:VID00054 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "CVM Household Cons Other goods and services"^^rdfs:Literal.
+adage:VID00055 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Gross fixed capital formation-Dwellings"^^rdfs:Literal.
+adage:VID00056 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Gross fixed capital formation-Machinery and equipment "^^rdfs:Literal.
+adage:VID00057 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Gross fixed capital formation-Cultivated biological resources "^^rdfs:Literal.
+adage:VID00058 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Gross fixed capital formation-Intellectual property products "^^rdfs:Literal.
+adage:VID00059 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Government-National; Final Cons. expenditure "^^rdfs:Literal.
+adage:VID00060 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Government-State and local; Final Cons. expenditure"^^rdfs:Literal.
+adage:VID00061 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Mining excluding exploration and mining support services "^^rdfs:Literal.
+adage:VID00062 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Manufacturing"^^rdfs:Literal.
+adage:VID00063 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Electricity, gas, water and waste services"^^rdfs:Literal.
+adage:VID00064 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Food, beverage and tobacco products"^^rdfs:Literal.
+adage:VID00065 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Textile, clothing and other manufacturing"^^rdfs:Literal.
+adage:VID00066 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Wood and paper products"^^rdfs:Literal.
+adage:VID00067 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Printing and recorded media"^^rdfs:Literal.
+adage:VID00068 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Petroleum, coal, chemical and rubber products"^^rdfs:Literal.
+adage:VID00069 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Non-metallic mineral products"^^rdfs:Literal.
+adage:VID00070 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Metal products"^^rdfs:Literal.
+adage:VID00071 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Machinery and equipment"^^rdfs:Literal.
+adage:VID00072 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Job Vacancies; Australia"^^rdfs:Literal.
+adage:VID00073 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Aggregate Monthly Hours Worked (Emp f/t); Persons "^^rdfs:Literal.
+adage:VID00074 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Aggregate Monthly Hours Worked (Emp p/t); Persons "^^rdfs:Literal.
+adage:VID00075 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Employed – full-time; Persons"^^rdfs:Literal.
+adage:VID00076 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Employed – part-time; Persons"^^rdfs:Literal.
+adage:VID00077 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Unemployment rate – looking for full-time work; Persons "^^rdfs:Literal.
+adage:VID00078 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Unemployed persons as percentage of labour force "^^rdfs:Literal.
+adage:VID00079 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Unemployed – looking for full-time work; Persons"^^rdfs:Literal.
+adage:VID00080 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Unemployed – looking for part-time work; Persons"^^rdfs:Literal.
+adage:VID00081 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Unemployed – total; Persons"^^rdfs:Literal.
+adage:VID00082 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "New South Wales; Number of Commitments "^^rdfs:Literal.
+adage:VID00083 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Victoria; Number of Commitments "^^rdfs:Literal.
+adage:VID00084 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Queensland; Number of Commitments"^^rdfs:Literal.
+adage:VID00085 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "South Australia; Number of Commitments"^^rdfs:Literal.
+adage:VID00086 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Western Australia; Number of Commitments"^^rdfs:Literal.
+adage:VID00087 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Tasmania; Number of Commitments"^^rdfs:Literal.
+adage:VID00088 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Northern Territory; Number of Commitments"^^rdfs:Literal.
+adage:VID00089 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Australian Capital Territory; Number of Commitments "^^rdfs:Literal.
+adage:VID00090 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Urban transport fares"^^rdfs:Literal.
+adage:VID00091 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Motor vehicles"^^rdfs:Literal.
+adage:VID00092 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Spare parts and accessories for motor vehicles"^^rdfs:Literal.
+adage:VID00093 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Automotive fuel"^^rdfs:Literal.
+adage:VID00094 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Maintenance and repair of motor vehicles"^^rdfs:Literal.
+adage:VID00095 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Other services in respect of motor vehicles"^^rdfs:Literal.
+adage:VID00096 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Postal services"^^rdfs:Literal.
+adage:VID00097 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Telecommunication equipment and services"^^rdfs:Literal.
+adage:VID00098 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Audio, visual and computing equipment"^^rdfs:Literal.
+adage:VID00099 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Domestic holiday travel and accommodation"^^rdfs:Literal.
+adage:VID00100 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; International holiday travel and accommodation "^^rdfs:Literal.
+adage:VID00101 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index; Pets and related products"^^rdfs:Literal.
+adage:VID00102 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Non-farm; Total compensation of employees: Current prices "^^rdfs:Literal.
+adage:VID00103 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/JPY Exchange Rate"^^rdfs:Literal.
+adage:VID00104 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/USD Exchange Rate"^^rdfs:Literal.
+adage:VID00105 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/KRW Exchange Rate"^^rdfs:Literal.
+adage:VID00106 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/NZD Exchange Rate"^^rdfs:Literal.
+adage:VID00107 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/CNY Exchange Rate"^^rdfs:Literal.
+adage:VID00108 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/GBP Exchange Rate"^^rdfs:Literal.
+adage:VID00109 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/SGD Exchange Rate"^^rdfs:Literal.
+adage:VID00110 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/IDR Exchange Rate"^^rdfs:Literal.
+adage:VID00111 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/HKD Exchange Rate"^^rdfs:Literal.
+adage:VID00112 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "AUD/MYR Exchange Rate"^^rdfs:Literal.
+adage:VID00113 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 00 Live animals other than division 03"^^rdfs:Literal.
+adage:VID00114 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 01 Meat and meat preparations"^^rdfs:Literal.
+adage:VID00115 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 02 Dairy products and birds’ eggs"^^rdfs:Literal.
+adage:VID00116 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 03 Fish, crustaceans, molluscs and aquatic invertebrates and preparations thereof"^^rdfs:Literal.
+adage:VID00117 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers;04 Cereals and cereal preparations"^^rdfs:Literal.
+adage:VID00118 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 05 Vegetables and fruit"^^rdfs:Literal.
+adage:VID00119 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 06 Sugars, sugar preparations and honey "^^rdfs:Literal.
+adage:VID00120 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 07 Coffee, tea, cocoa, spices and manuf. thereof "^^rdfs:Literal.
+adage:VID00121 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 08 Feeding stuff for animals (not including unmilled cereals)"^^rdfs:Literal.
+adage:VID00122 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 21 Hides, skins and furskins, raw "^^rdfs:Literal.
+adage:VID00123 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 24 Cork and wood"^^rdfs:Literal.
+adage:VID00124 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 26 Textile fibres and their wastes"^^rdfs:Literal.
+adage:VID00125 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 27 Crude fertilizers, other than those of division 56, and crude minerals (excluding coal, petroleum) "^^rdfs:Literal.
+adage:VID00126 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 28 Metalliferous ores and metal scrap"^^rdfs:Literal.
+adage:VID00127 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 32 Coal, coke and briquettes"^^rdfs:Literal.
+adage:VID00128 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 33 Petroleum, petroleum products and related materials"^^rdfs:Literal.
+adage:VID00129 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 34 Gas, natural and manufactured"^^rdfs:Literal.
+adage:VID00130 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 41 Animal oils and fats"^^rdfs:Literal.
+adage:VID00131 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 54 Medical and pharmaceutical products"^^rdfs:Literal.
+adage:VID00132 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 58 Plastics in non-primary forms"^^rdfs:Literal.
+adage:VID00133 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 59 Chemical materials and products, n.e.s. "^^rdfs:Literal.
+adage:VID00134 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 61 Leather, leather manufactures, n.e.s., and dressed furskins"^^rdfs:Literal.
+adage:VID00135 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 64 Paper, paperboard, and articles of paper pulp, of paper or of paperboard"^^rdfs:Literal.
+adage:VID00136 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 67 Iron and steel"^^rdfs:Literal.
+adage:VID00137 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 68 Non-ferrous metals"^^rdfs:Literal.
+adage:VID00138 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 71–75 Power generating, general industrial and other specialised machinery and equipment"^^rdfs:Literal.
+adage:VID00139 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 76–77 Telecommunications equipment, sound recording apparatus and electrical machinery, n.e.s."^^rdfs:Literal.
+adage:VID00140 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 78 Road vehicles (incl. air-cushion vehicles) "^^rdfs:Literal.
+adage:VID00141 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 79 Other transport equipment"^^rdfs:Literal.
+adage:VID00142 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 87 Professional, scientific and controlling instruments and apparatus, n.e.s."^^rdfs:Literal.
+adage:VID00143 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 88 Photographic apparatus, equipment and supplies and optical goods, n.e.s."^^rdfs:Literal.
+adage:VID00144 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 89 Miscellaneous manufactured articles, n.e.s. "^^rdfs:Literal.
+adage:VID00145 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; 97 Gold, non-monetary (excluding gold ores and concentrates) "^^rdfs:Literal.
+adage:VID00146 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Gross domestic product: Chain volume measures "^^rdfs:Literal.
+adage:VID00147 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index Numbers; All groups CPI"^^rdfs:Literal.
+adage:VID00148 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Interbank overnight cash rate in Australia "^^rdfs:Literal.
+adage:VID00149 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Total industrial industries; Index"^^rdfs:Literal.
+adage:VID00150 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Employed – total; Persons"^^rdfs:Literal.
+adage:VID00151 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Private dwelling approvals"^^rdfs:Literal.
+adage:VID00152 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Index of commodity prices; All items; AUD, Index, 2013/14=100 "^^rdfs:Literal.
+adage:VID00153 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Exports of goods and services "^^rdfs:Literal.
+adage:VID00154 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Imports of goods and services "^^rdfs:Literal.
+adage:VID00155 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Terms of Trade; Index"^^rdfs:Literal.
+adage:VID00156 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "M1"^^rdfs:Literal.
+adage:VID00157 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Credit; Total "^^rdfs:Literal.
+adage:VID00158 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "S& P ASX AllOrds adjusted closing prices "^^rdfs:Literal.
+adage:VID00159 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Household Final Consumption Expenditure: Chain volume measures "^^rdfs:Literal.
+adage:VID00160 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Unemployment rate; Persons"^^rdfs:Literal.
+adage:VID00161 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Average non-farm compensation per employee: Current prices"^^rdfs:Literal.
+adage:VID00162 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "10 yrs Australian Government "^^rdfs:Literal.
+adage:VID00163 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "M3"^^rdfs:Literal.
+adage:VID00164 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Broad money"^^rdfs:Literal.
+adage:VID00165 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Money base"^^rdfs:Literal.
+adage:VID00166 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Credit; Other personal"^^rdfs:Literal.
+adage:VID00167 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Credit; Business"^^rdfs:Literal.
+adage:VID00168 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Australian Dollar Trade-weighted Index "^^rdfs:Literal.
+adage:VID00169 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "General government; Final consumption expenditure "^^rdfs:Literal.
+adage:VID00170 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Domestic sales: Current prices"^^rdfs:Literal.
+adage:VID00171 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Retail sales; All industries; Current price"^^rdfs:Literal.
+adage:VID00172 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Labour Force; Persons "^^rdfs:Literal.
+adage:VID00173 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Aggregate Monthly Hours Worked; Persons"^^rdfs:Literal.
+adage:VID00174 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Total excluding refinancing of established dwellings – No. "^^rdfs:Literal.
+adage:VID00175 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Total excluding refinancing of established dwellings – Value "^^rdfs:Literal.
+adage:VID00176 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Total (State); Number of Commitments"^^rdfs:Literal.
+adage:VID00177 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Private non-farm inventory levels; book values; Current prices "^^rdfs:Literal.
+adage:VID00178 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Inventories to total sales; Ratio"^^rdfs:Literal.
+adage:VID00179 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Real export-weighted index; Original"^^rdfs:Literal.
+adage:VID00180 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Real import-weighted index; Original"^^rdfs:Literal.
+adage:VID00181 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Real household disposable income"^^rdfs:Literal.
+adage:VID00182 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "90 days Bank accepted bills"^^rdfs:Literal.
+adage:VID00183 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "5 yrs Australian Government"^^rdfs:Literal.
+adage:VID00184 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "10 yrs NSW Treasury Corporation"^^rdfs:Literal.
+adage:VID00185 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Currency: Seasonally adjusted"^^rdfs:Literal.
+adage:VID00186 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Narrow credit including loans and advances by AFIs plus Bills on issue"^^rdfs:Literal.
+adage:VID00187 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Loans and advances; Banks "^^rdfs:Literal.
+adage:VID00188 rdf:type owl:NamedIndividual,analytics:Variable;
+                                
+                                analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Rate,dbr:Bank_rate,dbr:Bank;
+                                analytics:origin adage:REF0049;
+                                rdfs:label "Overnight Interbank Rate (IBR) "^^rdfs:Literal.

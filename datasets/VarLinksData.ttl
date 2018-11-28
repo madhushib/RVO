@@ -1,0 +1,1104 @@
+
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix analytics: <http://www.adage.unsw.edu.au/analytics#>.
+@prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#>.
+
+
+adage:VL00001 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00003;
+analytics:coefficients "Positive"^^rdfs:Literal ;
+analytics:origin adage:VL00001origin.
+
+adage:VL00001origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0001,adage:REF0001.
+
+
+adage:VL00002 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00001;
+analytics:coefficients "Positive"^^rdfs:Literal ;
+analytics:origin adage:VL00002origin.
+
+adage:VL00002origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0002,adage:REF0001.
+
+
+adage:VL00003 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00004;
+analytics:linkType analytics:Formula;
+analytics:secondVariable adage:VID00005;
+analytics:origin adage:VL00003origin.
+
+adage:VL00003origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:MMID0001,adage:REF0003.
+
+
+adage:VL00004 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00006;
+analytics:origin adage:VL00004origin.
+
+adage:VL00004origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00005 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00007;
+analytics:origin adage:VL00005origin.
+
+adage:VL00005origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00006 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00008;
+analytics:origin adage:VL00006origin.
+
+adage:VL00006origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00007 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00009;
+analytics:origin adage:VL00007origin.
+
+adage:VL00007origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00008 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00010;
+analytics:origin adage:VL00008origin.
+
+adage:VL00008origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00009 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00011;
+analytics:origin adage:VL00009origin.
+
+adage:VL00009origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00010 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00012;
+analytics:origin adage:VL00010origin.
+
+adage:VL00010origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00011 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00013;
+analytics:origin adage:VL00011origin.
+
+adage:VL00011origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00012 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00014;
+analytics:origin adage:VL00012origin.
+
+adage:VL00012origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0003,adage:REF0006.
+
+
+adage:VL00013 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00015;
+analytics:linkType analytics:Formula;
+analytics:secondVariable adage:VID00016;
+analytics:origin adage:VL00013origin.
+
+adage:VL00013origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:MMID0002,adage:REF0024.
+
+
+adage:VL00013 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00015;
+analytics:linkType analytics:Formula;
+analytics:secondVariable adage:VID00017;
+analytics:origin adage:VL00013origin.
+
+adage:VL00013origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:MMID0002,adage:REF0024.
+
+
+adage:VL00014 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00018;
+analytics:origin adage:VL00014origin.
+
+adage:VL00014origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00015 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00020;
+analytics:origin adage:VL00015origin.
+
+adage:VL00015origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00016 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00021;
+analytics:origin adage:VL00016origin.
+
+adage:VL00016origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00017 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00022;
+analytics:origin adage:VL00017origin.
+
+adage:VL00017origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00018 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00023;
+analytics:origin adage:VL00018origin.
+
+adage:VL00018origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00019 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00024;
+analytics:origin adage:VL00019origin.
+
+adage:VL00019origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00020 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00025;
+analytics:origin adage:VL00020origin.
+
+adage:VL00020origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00021 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00026;
+analytics:origin adage:VL00021origin.
+
+adage:VL00021origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00022 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00027;
+analytics:origin adage:VL00022origin.
+
+adage:VL00022origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00023 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00028;
+analytics:origin adage:VL00023origin.
+
+adage:VL00023origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00024 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00029;
+analytics:origin adage:VL00024origin.
+
+adage:VL00024origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00025 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00030;
+analytics:origin adage:VL00025origin.
+
+adage:VL00025origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00018;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00020;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00021;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00022;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00023;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00024;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00025;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00026;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00027;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00028;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00029;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00026 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00001;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00030;
+analytics:origin adage:VL00026origin.
+
+adage:VL00026origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0004,adage:SMID0005,adage:REF0005.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00030;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00031;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00032;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00033;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00034;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00035;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00036;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00024;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00027 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00002;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00008;
+analytics:origin adage:VL00027origin.
+
+adage:VL00027origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0006,adage:REF00010.
+
+
+adage:VL00028 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00038;
+analytics:origin adage:VL00028origin.
+
+adage:VL00028origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0007,adage:REF0049.
+
+
+adage:VL00028 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00039;
+analytics:origin adage:VL00028origin.
+
+adage:VL00028origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0007,adage:REF0049.
+
+
+adage:VL00028 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00040;
+analytics:origin adage:VL00028origin.
+
+adage:VL00028origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0007,adage:REF0049.
+
+
+adage:VL00029 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00038;
+analytics:origin adage:VL00029origin.
+
+adage:VL00029origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0008,adage:REF0049.
+
+
+adage:VL00029 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00039;
+analytics:origin adage:VL00029origin.
+
+adage:VL00029origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0008,adage:REF0049.
+
+
+adage:VL00029 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00040;
+analytics:origin adage:VL00029origin.
+
+adage:VL00029origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0008,adage:REF0049.
+
+
+adage:VL00030 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00188;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00038;
+analytics:origin adage:VL00030origin.
+
+adage:VL00030origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0011,adage:REF0049.
+
+
+adage:VL00030 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00188;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00039;
+analytics:origin adage:VL00030origin.
+
+adage:VL00030origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0011,adage:REF0049.
+
+
+adage:VL00030 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00188;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00040;
+analytics:origin adage:VL00030origin.
+
+adage:VL00030origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0011,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00038;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00039;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00040;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00041;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00042;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00043;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00044;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00045;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00046;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00047;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00048;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00049;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00050;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00031 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00007;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00051;
+analytics:origin adage:VL00031origin.
+
+adage:VL00031origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0009,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00038;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00039;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00040;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00041;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00042;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00043;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00044;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00045;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00046;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00047;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00048;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00049;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00050;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+
+
+adage:VL00032 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00006;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00051;
+analytics:origin adage:VL00032origin.
+
+adage:VL00032origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel,analytics:ViaLiterature;
+analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
+

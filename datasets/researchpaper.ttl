@@ -1,0 +1,862 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#> .
+
+adage:REF0001 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0001,adage:PPL0002;
+	frbr:realization adage:REF0001Expression.
+adage:REF0001Expression a fabio:Expression;
+	dcterms:title "The Baby Boom, The Baby Bust, and the Housing Market";
+	fabio:hasPublicationYear "1988"^^xsd:gYear.
+
+adage:PPL0001 a foaf:Person ;
+	foaf:givenName "N Gregory";
+	foaf:familyName "Mankiw".
+
+
+adage:REF0002 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0027;
+	frbr:realization adage:REF0002Expression.
+adage:REF0002Expression a fabio:Expression;
+	dcterms:title "Understanding recent trends in house prices and home ownership";
+	fabio:hasPublicationYear "2007"^^xsd:gYear.
+
+adage:PPL0027 a foaf:Person ;
+	foaf:givenName "Robert J";
+	foaf:familyName "Shiller".
+
+
+adage:REF0005 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0003,adage:PPL0004;
+	frbr:realization adage:REF0005Expression.
+adage:REF0005Expression a fabio:Expression;
+	dcterms:title "Age, demographics, and the demand for housing, revisited ";
+	fabio:hasPublicationYear "2016"^^xsd:gYear.
+
+adage:PPL0003 a foaf:Person ;
+	foaf:givenName "Richard K";
+	foaf:familyName "Green".
+
+
+adage:PPL0004 a foaf:Person ;
+	foaf:givenName "Hyojung";
+	foaf:familyName "Lee".
+
+
+adage:REF0006 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0005,adage:PPL0006,adage:PPL0007;
+	frbr:realization adage:REF0006Expression.
+adage:REF0006Expression a fabio:Expression;
+	dcterms:title "Housing market stability, mortgage market structure, and monetary policy: Evidence from the euro area.";
+	fabio:hasPublicationYear "2017"^^xsd:gYear.
+
+adage:PPL0005 a foaf:Person ;
+	foaf:givenName "Zhu";
+	foaf:familyName "Bing".
+
+
+adage:PPL0006 a foaf:Person ;
+	foaf:givenName "Michael";
+	foaf:familyName "Betzinger".
+
+
+adage:PPL0007 a foaf:Person ;
+	foaf:givenName "Steffen";
+	foaf:familyName "Sebastian".
+
+
+adage:REF0007 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0008;
+	frbr:realization adage:REF0007Expression.
+adage:REF0007Expression a fabio:Expression;
+	dcterms:title "Real estate cycle: Some fundamentals";
+	fabio:hasPublicationYear "2003"^^xsd:gYear.
+
+adage:PPL0008 a foaf:Person ;
+	foaf:givenName "Wheaton";
+	foaf:familyName "William C.".
+
+
+adage:REF0008 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0009,adage:PPL0010,adage:PPL0011,adage:PPL0012,adage:PPL0013;
+	frbr:realization adage:REF0008Expression.
+adage:REF0008Expression a fabio:Expression;
+	dcterms:title "Australia's private rental market: the supply of, and demand for, affordable dwellings";
+	fabio:hasPublicationYear "2011"^^xsd:gYear.
+
+adage:PPL0009 a foaf:Person ;
+	foaf:givenName "Wulff";
+	foaf:familyName "Maryann".
+
+
+adage:PPL0010 a foaf:Person ;
+	foaf:givenName "Reynolds";
+	foaf:familyName "Margaret".
+
+
+adage:PPL0011 a foaf:Person ;
+	foaf:givenName "Arunachalam";
+	foaf:familyName "Dharmalingam".
+
+
+adage:PPL0012 a foaf:Person ;
+	foaf:givenName "Hulse";
+	foaf:familyName "Kath".
+
+
+adage:PPL0013 a foaf:Person ;
+	foaf:givenName "Yates";
+	foaf:familyName "Judith".
+
+
+adage:REF0009 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0014,adage:PPL0015,adage:PPL0016;
+	frbr:realization adage:REF0009Expression.
+adage:REF0009Expression a fabio:Expression;
+	dcterms:title "Housing affordability dynamics: new insights from the last decade";
+	fabio:hasPublicationYear "2014"^^xsd:gYear.
+
+adage:PPL0014 a foaf:Person ;
+	foaf:givenName "Wood";
+	foaf:familyName "Gavin".
+
+
+adage:PPL0015 a foaf:Person ;
+	foaf:givenName "Ong";
+	foaf:familyName "Rachel".
+
+
+adage:PPL0016 a foaf:Person ;
+	foaf:givenName "Cigdem";
+	foaf:familyName "Melek".
+
+
+adage:REF0010 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0017,adage:PPL0018;
+	frbr:realization adage:REF0010Expression.
+adage:REF0010Expression a fabio:Expression;
+	dcterms:title "Fundamental factors in the housing markets of China";
+	fabio:hasPublicationYear "2014"^^xsd:gYear.
+
+adage:PPL0017 a foaf:Person ;
+	foaf:givenName "Wang";
+	foaf:familyName "Zhi".
+
+
+adage:PPL0018 a foaf:Person ;
+	foaf:givenName "Zhang";
+	foaf:familyName "Qinghua".
+
+
+adage:REF0011 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0019,adage:PPL0020;
+	frbr:realization adage:REF0011Expression.
+adage:REF0011Expression a fabio:Expression;
+	dcterms:title "What drives housing price dynamics: Cross-country evidence?";
+	fabio:hasPublicationYear "2004"^^xsd:gYear.
+
+adage:PPL0019 a foaf:Person ;
+	foaf:givenName "Tsatsaronis";
+	foaf:familyName "Kostas".
+
+
+adage:PPL0020 a foaf:Person ;
+	foaf:givenName "Zhu";
+	foaf:familyName "Haibin".
+
+
+adage:REF0012 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0021,adage:PPL0022,adage:PPL0023,adage:PPL0024;
+	frbr:realization adage:REF0012Expression.
+adage:REF0012Expression a fabio:Expression;
+	dcterms:title "Foreign buyers and housing price dynamics";
+	fabio:hasPublicationYear "2017"^^xsd:gYear.
+
+adage:PPL0021 a foaf:Person ;
+	foaf:givenName "Tai";
+	foaf:familyName "Meng-Yi".
+
+
+adage:PPL0022 a foaf:Person ;
+	foaf:givenName "Hu";
+	foaf:familyName "Shih-Wen".
+
+
+adage:PPL0023 a foaf:Person ;
+	foaf:givenName "Chao";
+	foaf:familyName "Chi-Chur".
+
+
+adage:PPL0024 a foaf:Person ;
+	foaf:givenName "Wang";
+	foaf:familyName "Vey".
+
+
+adage:REF0013 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0025,adage:PPL0026;
+	frbr:realization adage:REF0013Expression.
+adage:REF0013Expression a fabio:Expression;
+	dcterms:title "How to reform the property tax: lessons from around the world";
+	fabio:hasPublicationYear "2015"^^xsd:gYear.
+
+adage:PPL0025 a foaf:Person ;
+	foaf:givenName "Slack";
+	foaf:familyName "Enid".
+
+
+adage:PPL0026 a foaf:Person ;
+	foaf:givenName "Bird";
+	foaf:familyName "Richard M".
+
+
+adage:REF0014 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0027;
+	frbr:realization adage:REF0014Expression.
+adage:REF0014Expression a fabio:Expression;
+	dcterms:title "Understanding recent trends in house prices and home ownership";
+	fabio:hasPublicationYear "2007"^^xsd:gYear.
+
+adage:PPL0027 a foaf:Person ;
+	foaf:givenName "Robert J";
+	foaf:familyName "Shiller".
+
+
+adage:REF0015 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0027;
+	frbr:realization adage:REF0015Expression.
+adage:REF0015Expression a fabio:Expression;
+	dcterms:title "Long-term perspective on the current boom in home prices";
+	fabio:hasPublicationYear "2006"^^xsd:gYear.
+
+adage:PPL0027 a foaf:Person ;
+	foaf:givenName "Robert J";
+	foaf:familyName "Shiller".
+
+
+adage:REF0016 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0028,adage:PPL0029,adage:PPL0030;
+	frbr:realization adage:REF0016Expression.
+adage:REF0016Expression a fabio:Expression;
+	dcterms:title "Can interest rates really control house prices? Effectiveness and implications for macro prudential policy";
+	fabio:hasPublicationYear "2014"^^xsd:gYear.
+
+adage:PPL0028 a foaf:Person ;
+	foaf:givenName "Shi";
+	foaf:familyName " Song".
+
+
+adage:PPL0029 a foaf:Person ;
+	foaf:givenName "Jou";
+	foaf:familyName "Jyh-Bang".
+
+
+adage:PPL0030 a foaf:Person ;
+	foaf:givenName "Tripe";
+	foaf:familyName "David".
+
+
+adage:REF0017 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0031,adage:PPL0032;
+	frbr:realization adage:REF0017Expression.
+adage:REF0017Expression a fabio:Expression;
+	dcterms:title "Housing risks will force bank capital higher: APRA";
+	fabio:hasPublicationYear "2009"^^xsd:gYear.
+
+adage:PPL0031 a foaf:Person ;
+	foaf:givenName "John C";
+	foaf:familyName "Coffee Jr".
+
+
+adage:PPL0032 a foaf:Person ;
+	foaf:givenName "Hillary A";
+	foaf:familyName "Sale".
+
+
+adage:REF0018 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0033;
+	frbr:realization adage:REF0018Expression.
+adage:REF0018Expression a fabio:Expression;
+	dcterms:title "Out of reach? The Australian housing affordability challenge";
+	fabio:hasPublicationYear "2015"^^xsd:gYear.
+
+adage:PPL0033 a foaf:Person ;
+	foaf:givenName "Senate Economics References Committee";
+	foaf:familyName " and others".
+
+
+adage:REF0019 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0034,adage:PPL0035,adage:PPL0036;
+	frbr:realization adage:REF0019Expression.
+adage:REF0019Expression a fabio:Expression;
+	dcterms:title "House price determinants in Athens: a spatial econometric approach";
+	fabio:hasPublicationYear "2017"^^xsd:gYear.
+
+adage:PPL0034 a foaf:Person ;
+	foaf:givenName "Marianthi";
+	foaf:familyName "Stamou".
+
+
+adage:PPL0035 a foaf:Person ;
+	foaf:givenName "Angelos";
+	foaf:familyName "Mimis".
+
+
+adage:PPL0036 a foaf:Person ;
+	foaf:givenName "Antonis";
+	foaf:familyName "Rovolis".
+
+
+adage:REF0020 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0037;
+	frbr:realization adage:REF0020Expression.
+adage:REF0020Expression a fabio:Expression;
+	dcterms:title "The geographic determinants of housing supply";
+	fabio:hasPublicationYear "2010"^^xsd:gYear.
+
+adage:PPL0037 a foaf:Person ;
+	foaf:givenName "Albert";
+	foaf:familyName "Saiz".
+
+
+adage:REF0021 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0038,adage:PPL0039,adage:PPL0040;
+	frbr:realization adage:REF0021Expression.
+adage:REF0021Expression a fabio:Expression;
+	dcterms:title "The factors affecting housing price in Hangzhou: an empirical analysis";
+	fabio:hasPublicationYear "2012"^^xsd:gYear.
+
+adage:PPL0038 a foaf:Person ;
+	foaf:givenName "Mohammad Mafizur";
+	foaf:familyName "Rahman".
+
+
+adage:PPL0039 a foaf:Person ;
+	foaf:givenName "Rasheda";
+	foaf:familyName "Khanam".
+
+
+adage:PPL0040 a foaf:Person ;
+	foaf:givenName "Suichen";
+	foaf:familyName "Xu".
+
+
+adage:REF0022 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0041,adage:PPL0042;
+	frbr:realization adage:REF0022Expression.
+adage:REF0022Expression a fabio:Expression;
+	dcterms:title "Determinants of house price dynamics. What can we learn from search engine data?";
+	fabio:hasPublicationYear "2014"^^xsd:gYear.
+
+adage:PPL0041 a foaf:Person ;
+	foaf:givenName "Lars";
+	foaf:familyName "Bennohr".
+
+
+adage:PPL0042 a foaf:Person ;
+	foaf:givenName "Marco";
+	foaf:familyName "Oestmann".
+
+
+adage:REF0023 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0043,adage:PPL0044;
+	frbr:realization adage:REF0023Expression.
+adage:REF0023Expression a fabio:Expression;
+	dcterms:title "Do house prices reflect fundamentals? Aggregate and panel data evidence";
+	fabio:hasPublicationYear "2009"^^xsd:gYear.
+
+adage:PPL0043 a foaf:Person ;
+	foaf:givenName "Mikhed";
+	foaf:familyName "Vyacheslav".
+
+
+adage:PPL0044 a foaf:Person ;
+	foaf:givenName "Petr";
+	foaf:familyName "Zemik".
+
+
+adage:REF0024 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0045,adage:PPL0046;
+	frbr:realization adage:REF0024Expression.
+adage:REF0024Expression a fabio:Expression;
+	dcterms:title "Testing the present value relation for housing prices: should I leave my house in San Francisco? ";
+	fabio:hasPublicationYear "1994"^^xsd:gYear.
+
+adage:PPL0045 a foaf:Person ;
+	foaf:givenName "Richard";
+	foaf:familyName "Meese".
+
+
+adage:PPL0046 a foaf:Person ;
+	foaf:givenName "Nancy";
+	foaf:familyName "Wallace".
+
+
+adage:REF0025 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0047,adage:PPL0048;
+	frbr:realization adage:REF0025Expression.
+adage:REF0025Expression a fabio:Expression;
+	dcterms:title "Housing affordability: What is driving house prices in Sydney and Melbourne?";
+	fabio:hasPublicationYear "2004"^^xsd:gYear.
+
+adage:PPL0047 a foaf:Person ;
+	foaf:givenName "Mike";
+	foaf:familyName "Berry".
+
+
+adage:PPL0048 a foaf:Person ;
+	foaf:givenName "Tony";
+	foaf:familyName "Dalton".
+
+
+adage:REF0026 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0049,adage:PPL0050,adage:PPL0051;
+	frbr:realization adage:REF0026Expression.
+adage:REF0026Expression a fabio:Expression;
+	dcterms:title "House price dynamics with household debt: the Korean Case";
+	fabio:hasPublicationYear "2017"^^xsd:gYear.
+
+adage:PPL0049 a foaf:Person ;
+	foaf:givenName "Hyun Jeong";
+	foaf:familyName "Kim".
+
+
+adage:PPL0050 a foaf:Person ;
+	foaf:givenName "Jong Chil";
+	foaf:familyName "Son".
+
+
+adage:PPL0051 a foaf:Person ;
+	foaf:givenName "Myung-Soo";
+	foaf:familyName "Yie".
+
+
+adage:REF0027 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0052;
+	frbr:realization adage:REF0027Expression.
+adage:REF0027Expression a fabio:Expression;
+	dcterms:title "The house price determination process: rational expectations with a spatial context";
+	fabio:hasPublicationYear "2011"^^xsd:gYear.
+
+adage:PPL0052 a foaf:Person ;
+	foaf:givenName "Kiefer";
+	foaf:familyName "Hua".
+
+
+adage:REF0028 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0053,adage:PPL0054;
+	frbr:realization adage:REF0028Expression.
+adage:REF0028Expression a fabio:Expression;
+	dcterms:title "House prices and the stance of monetary policy";
+	fabio:hasPublicationYear "2008"^^xsd:gYear.
+
+adage:PPL0053 a foaf:Person ;
+	foaf:givenName "Marek";
+	foaf:familyName "Jarocinski".
+
+
+adage:PPL0054 a foaf:Person ;
+	foaf:givenName "Smets";
+	foaf:familyName "Frank".
+
+
+adage:REF0029 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0055,adage:PPL0056;
+	frbr:realization adage:REF0029Expression.
+adage:REF0029Expression a fabio:Expression;
+	dcterms:title "Aging and urban house prices";
+	fabio:hasPublicationYear "2016"^^xsd:gYear.
+
+adage:PPL0055 a foaf:Person ;
+	foaf:givenName "Norbert";
+	foaf:familyName "Hiller".
+
+
+adage:PPL0056 a foaf:Person ;
+	foaf:givenName "Oliver W";
+	foaf:familyName "Lerbs".
+
+
+adage:REF0030 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0057,adage:PPL0058;
+	frbr:realization adage:REF0030Expression.
+adage:REF0030Expression a fabio:Expression;
+	dcterms:title "Taxes and the user cost of capital for owner-occupied housing";
+	fabio:hasPublicationYear "1982"^^xsd:gYear.
+
+adage:PPL0057 a foaf:Person ;
+	foaf:givenName "Patric H";
+	foaf:familyName "Hendershott".
+
+
+adage:PPL0058 a foaf:Person ;
+	foaf:givenName "Joel";
+	foaf:familyName "Slemrod".
+
+
+adage:REF0031 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0059,adage:PPL0060,adage:PPL0061;
+	frbr:realization adage:REF0031Expression.
+adage:REF0031Expression a fabio:Expression;
+	dcterms:title "Financial market liberalization, monetary policy, and housing price dynamics";
+	fabio:hasPublicationYear "2010"^^xsd:gYear.
+
+adage:PPL0059 a foaf:Person ;
+	foaf:givenName "Stephen M";
+	foaf:familyName "Miller".
+
+
+adage:PPL0060 a foaf:Person ;
+	foaf:givenName "Dylan";
+	foaf:familyName "Van Wyk".
+
+
+adage:PPL0061 a foaf:Person ;
+	foaf:givenName "Rangan";
+	foaf:familyName "Gupta".
+
+
+adage:REF0032 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0059,adage:PPL0061,adage:PPL0062;
+	frbr:realization adage:REF0032Expression.
+adage:REF0032Expression a fabio:Expression;
+	dcterms:title "Using large datasets to forecast house prices: A case study of twenty US. States";
+	fabio:hasPublicationYear "2011"^^xsd:gYear.
+
+adage:PPL0059 a foaf:Person ;
+	foaf:givenName "Stephen M";
+	foaf:familyName "Miller".
+
+
+adage:PPL0061 a foaf:Person ;
+	foaf:givenName "Rangan";
+	foaf:familyName "Gupta".
+
+
+adage:PPL0062 a foaf:Person ;
+	foaf:givenName "Alain";
+	foaf:familyName "Kabundi".
+
+
+adage:REF0033 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0063,adage:PPL0064,adage:PPL0065,adage:PPL0066;
+	frbr:realization adage:REF0033Expression.
+adage:REF0033Expression a fabio:Expression;
+	dcterms:title "Forecasting real estate prices";
+	fabio:hasPublicationYear "2013"^^xsd:gYear.
+
+adage:PPL0063 a foaf:Person ;
+	foaf:givenName "Eric";
+	foaf:familyName "Ghysels".
+
+
+adage:PPL0064 a foaf:Person ;
+	foaf:givenName "Alberto";
+	foaf:familyName "Plazzi".
+
+
+adage:PPL0065 a foaf:Person ;
+	foaf:givenName "Rossen";
+	foaf:familyName "Valkanov".
+
+
+adage:PPL0066 a foaf:Person ;
+	foaf:givenName "Walter";
+	foaf:familyName "Torous".
+
+
+adage:REF0034 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0067,adage:PPL0068,adage:PPL0069;
+	frbr:realization adage:REF0034Expression.
+adage:REF0034Expression a fabio:Expression;
+	dcterms:title "Explosive bubbles in house prices? Evidence from the OECD countries";
+	fabio:hasPublicationYear "2016"^^xsd:gYear.
+
+adage:PPL0067 a foaf:Person ;
+	foaf:givenName "Tom";
+	foaf:familyName "Engsted".
+
+
+adage:PPL0068 a foaf:Person ;
+	foaf:givenName "Simon J";
+	foaf:familyName "Hviid".
+
+
+adage:PPL0069 a foaf:Person ;
+	foaf:givenName "Thomas Q";
+	foaf:familyName "Pedersen".
+
+
+adage:REF0035 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0070;
+	frbr:realization adage:REF0035Expression.
+adage:REF0035Expression a fabio:Expression;
+	dcterms:title "A dynamic factor model for forecasting house prices in Belgium";
+	fabio:hasPublicationYear "2016"^^xsd:gYear.
+
+adage:PPL0070 a foaf:Person ;
+	foaf:givenName "Marina";
+	foaf:familyName "Emiris".
+
+
+adage:REF0036 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0071,adage:PPL0072;
+	frbr:realization adage:REF0036Expression.
+adage:REF0036Expression a fabio:Expression;
+	dcterms:title "Demographics, human capital, and the demand for housing";
+	fabio:hasPublicationYear "2014"^^xsd:gYear.
+
+adage:PPL0071 a foaf:Person ;
+	foaf:givenName "Piet";
+	foaf:familyName "Eichholtz".
+
+
+adage:PPL0072 a foaf:Person ;
+	foaf:givenName "Thies";
+	foaf:familyName "Lindenthal".
+
+
+adage:REF0037 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0008,adage:PPL0073;
+	frbr:realization adage:REF0037Expression.
+adage:REF0037Expression a fabio:Expression;
+	dcterms:title "The markets for real estate assets and space: a conceptual framework";
+	fabio:hasPublicationYear "1992"^^xsd:gYear.
+
+adage:PPL0008 a foaf:Person ;
+	foaf:givenName "Wheaton";
+	foaf:familyName "William C.".
+
+
+adage:PPL0073 a foaf:Person ;
+	foaf:givenName "Denise";
+	foaf:familyName "DiPasquale".
+
+
+adage:REF0038 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0074,adage:PPL0075,adage:PPL0076;
+	frbr:realization adage:REF0038Expression.
+adage:REF0038Expression a fabio:Expression;
+	dcterms:title "Forecasting using a large number of predictors:  Is Bayesian shrinkage a valid alternative to principal components? ";
+	fabio:hasPublicationYear "2008"^^xsd:gYear.
+
+adage:PPL0074 a foaf:Person ;
+	foaf:givenName "Christine";
+	foaf:familyName "De Mol".
+
+
+adage:PPL0075 a foaf:Person ;
+	foaf:givenName "Domenico";
+	foaf:familyName "Giannone".
+
+
+adage:PPL0076 a foaf:Person ;
+	foaf:givenName "Lucrezia";
+	foaf:familyName "Reichlin".
+
+
+adage:REF0039 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0101,adage:PPL0102;
+	frbr:realization adage:REF0039Expression.
+adage:REF0039Expression a fabio:Expression;
+	dcterms:title "Property taxes";
+	fabio:hasPublicationYear "2015"^^xsd:gYear.
+
+adage:PPL0101 a foaf:Person ;
+	foaf:givenName "John";
+	foaf:familyName "Daley".
+
+
+adage:PPL0102 a foaf:Person ;
+	foaf:givenName "Brendan";
+	foaf:familyName "Coates".
+
+
+adage:REF0040 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0077,adage:PPL0078,adage:PPL0079;
+	frbr:realization adage:REF0040Expression.
+adage:REF0040Expression a fabio:Expression;
+	dcterms:title "Housing finance and real-estate booms: A cross-country perspective";
+	fabio:hasPublicationYear "2017"^^xsd:gYear.
+
+adage:PPL0077 a foaf:Person ;
+	foaf:givenName "Eugenio";
+	foaf:familyName "Cerutti".
+
+
+adage:PPL0078 a foaf:Person ;
+	foaf:givenName "Jihad";
+	foaf:familyName "Dagher".
+
+
+adage:PPL0079 a foaf:Person ;
+	foaf:givenName "Giovanni";
+	foaf:familyName "Dell'Ariccia".
+
+
+adage:REF0041 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0080,adage:PPL0081;
+	frbr:realization adage:REF0041Expression.
+adage:REF0041Expression a fabio:Expression;
+	dcterms:title "The efficiency of the market for single family homes";
+	fabio:hasPublicationYear "1988"^^xsd:gYear.
+
+adage:PPL0080 a foaf:Person ;
+	foaf:givenName "Karl E.";
+	foaf:familyName "Case".
+
+
+adage:PPL0081 a foaf:Person ;
+	foaf:givenName "Robert J.";
+	foaf:familyName "Shiller.".
+
+
+adage:REF0042 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0082,adage:PPL0083,adage:PPL0084,adage:PPL0085;
+	frbr:realization adage:REF0042Expression.
+adage:REF0042Expression a fabio:Expression;
+	dcterms:title "Determinants of real house price dynamics";
+	fabio:hasPublicationYear "2002"^^xsd:gYear.
+
+adage:PPL0082 a foaf:Person ;
+	foaf:givenName "Dennis R";
+	foaf:familyName "Capozza".
+
+
+adage:PPL0083 a foaf:Person ;
+	foaf:givenName "Patric H";
+	foaf:familyName "Hendershott".
+
+
+adage:PPL0084 a foaf:Person ;
+	foaf:givenName "Charlotte";
+	foaf:familyName "Mack".
+
+
+adage:PPL0085 a foaf:Person ;
+	foaf:givenName "Christopher J";
+	foaf:familyName "Mayer".
+
+
+adage:REF0043 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0086,adage:PPL0087,adage:PPL0088;
+	frbr:realization adage:REF0043Expression.
+adage:REF0043Expression a fabio:Expression;
+	dcterms:title "Measuring House Price Bubbles";
+	fabio:hasPublicationYear "2016"^^xsd:gYear.
+
+adage:PPL0086 a foaf:Person ;
+	foaf:givenName "Martin E";
+	foaf:familyName "Hoesli".
+
+
+adage:PPL0087 a foaf:Person ;
+	foaf:givenName "Steven";
+	foaf:familyName "Bourassa".
+
+
+adage:PPL0088 a foaf:Person ;
+	foaf:givenName "Elias";
+	foaf:familyName "Oikarinen".
+
+
+adage:REF0044 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0089,adage:PPL0090;
+	frbr:realization adage:REF0044Expression.
+adage:REF0044Expression a fabio:Expression;
+	dcterms:title "Housing price forecastability: A factor analysis";
+	fabio:hasPublicationYear "2016"^^xsd:gYear.
+
+adage:PPL0089 a foaf:Person ;
+	foaf:givenName "Lasse";
+	foaf:familyName "Bork".
+
+
+adage:PPL0090 a foaf:Person ;
+	foaf:givenName "Stig V.";
+	foaf:familyName "Moller".
+
+
+adage:REF0045 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0091,adage:PPL0092;
+	frbr:realization adage:REF0045Expression.
+adage:REF0045Expression a fabio:Expression;
+	dcterms:title "Booms and busts in housing markets: Determinants and implications";
+	fabio:hasPublicationYear "2011"^^xsd:gYear.
+
+adage:PPL0091 a foaf:Person ;
+	foaf:givenName "Luca";
+	foaf:familyName "Agnello".
+
+
+adage:PPL0092 a foaf:Person ;
+	foaf:givenName "Ludger";
+	foaf:familyName "Schuknecht".
+
+
+adage:REF0046 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0093,adage:PPL0094;
+	frbr:realization adage:REF0046Expression.
+adage:REF0046Expression a fabio:Expression;
+	dcterms:title "Macroeconomic determinants of international housing markets";
+	fabio:hasPublicationYear "2010"^^xsd:gYear.
+
+adage:PPL0093 a foaf:Person ;
+	foaf:givenName "Zeno";
+	foaf:familyName "Adams".
+
+
+adage:PPL0094 a foaf:Person ;
+	foaf:givenName "Roland";
+	foaf:familyName "Fuss".
+
+
+adage:REF0047 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0095,adage:PPL0096,adage:PPL0097,adage:PPL0098;
+	frbr:realization adage:REF0047Expression.
+adage:REF0047Expression a fabio:Expression;
+	dcterms:title "Explaining House Prices in Australia 1970 2003";
+	fabio:hasPublicationYear "2005"^^xsd:gYear.
+
+adage:PPL0095 a foaf:Person ;
+	foaf:givenName "Peter";
+	foaf:familyName "Abelson".
+
+
+adage:PPL0096 a foaf:Person ;
+	foaf:givenName "Roselyne";
+	foaf:familyName "Joyeux".
+
+
+adage:PPL0097 a foaf:Person ;
+	foaf:givenName "George";
+	foaf:familyName "Milunovich".
+
+
+adage:PPL0098 a foaf:Person ;
+	foaf:givenName "Demi";
+	foaf:familyName "Chung".
+
+
+adage:REF0048 a fabio:ResearchPaper;
+	dcterms:creator adage:PPL0099,adage:PPL0100;
+	frbr:realization adage:REF0048Expression.
+adage:REF0048Expression a fabio:Expression;
+	dcterms:title "House price determinants in Liverpool, United Kingdom";
+	fabio:hasPublicationYear "2011"^^xsd:gYear.
+
+adage:PPL0099 a foaf:Person ;
+	foaf:givenName "Raymond Talinbe";
+	foaf:familyName "Abdulai".
+
+
+adage:PPL0100 a foaf:Person ;
+	foaf:givenName "Anthony";
+	foaf:familyName "Owusu-Ansah".
+
+
+
