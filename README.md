@@ -1,0 +1,4 @@
+# RVO
+Contain ontology, data sets and scripts for Research Variable Ontology.
+
+RVO, Research Variable Ontology, proposes a schema enterprise can use to record their data analytics experiments and use as a knowledgebase for learning and recommendation support. RVO is designed around the research variables, which form the basis of the hypothesis that analysts test through building a model. RVO can answer an array of questions raised by data analysts when they start designing a solution and provide recommendations and alternatives. All facts or expert knowledge recorded in RVO are traceable to its origin (i.e. a person, publication, validated model). RVO follows best practices in ontology design and reuse existing data models and vocabularies (such as DBPedia, RDF-Cube, FABIO) to facilitate efficient reuse in real world applications by using semantic technologies and open standards (RDF, OWL, SPARQL).
