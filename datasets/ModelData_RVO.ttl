@@ -3,52 +3,52 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix : <http://www.adage.unsw.edu.au/analytics#>.
+@prefix : <http://w3id.org/rv-ontology#>.
 @prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#>.
 
-###  http://www.adage.unsw.edu.au/analytics#MMID0001
+###  http://w3id.org/rv-ontology#MMID0001
 adage:MMID0001 rdf:type owl:NamedIndividual ,
                    :MathematicalModel ;
           :rCode "average(i1,i2,..)"^^rdfs:Literal ;
           rdfs:label "Average"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MMID0002
+###  http://w3id.org/rv-ontology#MMID0002
 adage:MMID0002 rdf:type owl:NamedIndividual ,
                    :MathematicalModel ;
           :rCode "rent * (1 + cost of capital/100) ^ -year"^^rdfs:Literal ;
           rdfs:label "Present value of rent"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00001
+###  http://w3id.org/rv-ontology#MT00001
 :MT00001 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :LeastSquareErrors ;
          rdfs:label "Regression"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00002
+###  http://w3id.org/rv-ontology#MT00002
 :MT00002 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :Optimisation-Utility_Function ;
          rdfs:label "Var Model"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00003
+###  http://w3id.org/rv-ontology#MT00003
 :MT00003 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :LeastSquareErrors ;
          rdfs:label "Dynamic Factor Model (DFM)"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00004
+###  http://w3id.org/rv-ontology#MT00004
 :MT00004 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :LeastSquareErrors ;
          rdfs:label "Ridge Regression"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00005
+###  http://w3id.org/rv-ontology#MT00005
 :MT00005 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :LeastSquareErrors ;
@@ -56,14 +56,14 @@ adage:MMID0002 rdf:type owl:NamedIndividual ,
          rdfs:label "Least Angle Regression (LARS)"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00006
+###  http://w3id.org/rv-ontology#MT00006
 :MT00006 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :LeastSquareErrors ;
          rdfs:label "Bagging LARS"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#MT00007
+###  http://w3id.org/rv-ontology#MT00007
 :MT00007 rdf:type owl:NamedIndividual ,
                   :ModelType ;
          :modelEstimator :LeastSquareErrors .

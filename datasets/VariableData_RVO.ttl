@@ -4,7 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#>.
-@prefix analytics: <http://www.adage.unsw.edu.au/analytics#> .
+@prefix analytics: <http://w3id.org/rv-ontology#> .
 
 adage:VID00001 rdf:type owl:NamedIndividual,analytics:Variable;
                                 analytics:measuredBy adage:MID00001;

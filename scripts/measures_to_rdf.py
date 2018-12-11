@@ -7,7 +7,7 @@ header = \
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix analytics: <http://www.adage.unsw.edu.au/analytics#> .
+@prefix analytics: <http://w3id.org/rv-ontology#> .
 @prefix adage: <http://adage.cse.unsw.edu.au/resource/analytics#> .
 
 """

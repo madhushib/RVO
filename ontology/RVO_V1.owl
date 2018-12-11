@@ -1,4 +1,4 @@
-@prefix : <http://www.adage.unsw.edu.au/analytics#> .
+@prefix : <http://w3id.org/rv-ontology#> .
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,95 +8,95 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.adage.unsw.edu.au/analytics> .
+@base <http://w3id.org/rv-ontology> .
 
-<http://www.adage.unsw.edu.au/analytics> rdf:type owl:Ontology .
+<http://w3id.org/rv-ontology> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.adage.unsw.edu.au/analytics#containMeasure
+###  http://w3id.org/rv-ontology#containMeasure
 :containMeasure rdf:type owl:ObjectProperty ;
                 rdfs:domain :DatasetStructure ;
                 rdfs:range :Measure .
 
 
-###  http://www.adage.unsw.edu.au/analytics#controlVariable
+###  http://w3id.org/rv-ontology#controlVariable
 :controlVariable rdf:type owl:ObjectProperty ;
                  rdfs:domain :Model ;
                  rdfs:range :Variable .
 
 
-###  http://www.adage.unsw.edu.au/analytics#dataSource
+###  http://w3id.org/rv-ontology#dataSource
 :dataSource rdf:type owl:ObjectProperty ;
             rdfs:domain :DatasetStructure ;
             rdfs:range :DataSource .
 
 
-###  http://www.adage.unsw.edu.au/analytics#datasetStructure
+###  http://w3id.org/rv-ontology#datasetStructure
 :datasetStructure rdf:type owl:ObjectProperty ;
                   rdfs:domain :Dataset ;
                   rdfs:range :DatasetStructure .
 
 
-###  http://www.adage.unsw.edu.au/analytics#firstVariable
+###  http://w3id.org/rv-ontology#firstVariable
 :firstVariable rdf:type owl:ObjectProperty ;
                rdfs:domain :LinkedVariables ;
                rdfs:range :Variable .
 
 
-###  http://www.adage.unsw.edu.au/analytics#fromExpert
+###  http://w3id.org/rv-ontology#fromExpert
 :fromExpert rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :origin ;
             rdfs:range <http://xmlns.com/foaf/0.1/Person> .
 
 
-###  http://www.adage.unsw.edu.au/analytics#linkType
+###  http://w3id.org/rv-ontology#linkType
 :linkType rdf:type owl:ObjectProperty ;
           rdfs:domain :LinkedVariables ;
           rdfs:range :LinkType .
 
 
-###  http://www.adage.unsw.edu.au/analytics#measuredBy
+###  http://w3id.org/rv-ontology#measuredBy
 :measuredBy rdf:type owl:ObjectProperty ;
             rdfs:domain :Variable ;
             rdfs:range :Measure .
 
 
-###  http://www.adage.unsw.edu.au/analytics#modelType
+###  http://w3id.org/rv-ontology#modelType
 :modelType rdf:type owl:ObjectProperty ;
            rdfs:range :ModelType .
 
 
-###  http://www.adage.unsw.edu.au/analytics#operationalize
+###  http://w3id.org/rv-ontology#operationalize
 :operationalize rdf:type owl:ObjectProperty ;
                 rdfs:domain :Variable ;
                 rdfs:range :Concept .
 
 
-###  http://www.adage.unsw.edu.au/analytics#origin
+###  http://w3id.org/rv-ontology#origin
 :origin rdf:type owl:ObjectProperty .
 
 
-###  http://www.adage.unsw.edu.au/analytics#secondVariable
+###  http://w3id.org/rv-ontology#secondVariable
 :secondVariable rdf:type owl:ObjectProperty ;
                 rdfs:domain :LinkedVariables ;
                 rdfs:range :Variable .
 
 
-###  http://www.adage.unsw.edu.au/analytics#trainingSet
+###  http://w3id.org/rv-ontology#trainingSet
 :trainingSet rdf:type owl:ObjectProperty ;
              rdfs:range :Dataset .
 
 
-###  http://www.adage.unsw.edu.au/analytics#viaLitreture
+###  http://w3id.org/rv-ontology#viaLitreture
 :viaLitreture rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :origin ;
               rdfs:range fabio:ResearchPaper .
 
 
-###  http://www.adage.unsw.edu.au/analytics#viaModel
+###  http://w3id.org/rv-ontology#viaModel
 :viaModel rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :origin ;
           rdfs:domain :LinkedVariables ;
@@ -111,28 +111,28 @@
 dcterms:title rdf:type owl:DatatypeProperty .
 
 
-###  http://www.adage.unsw.edu.au/analytics#coefficients
+###  http://w3id.org/rv-ontology#coefficients
 :coefficients rdf:type owl:DatatypeProperty ;
               rdfs:domain :LinkedVariables ;
               rdfs:range rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#confidenceIntervels
+###  http://w3id.org/rv-ontology#confidenceIntervels
 :confidenceIntervels rdf:type owl:DatatypeProperty .
 
 
-###  http://www.adage.unsw.edu.au/analytics#measureReferenceInDatasource
+###  http://w3id.org/rv-ontology#measureReferenceInDatasource
 :measureReferenceInDatasource rdf:type owl:DatatypeProperty ;
                               rdfs:domain :Measure ;
                               rdfs:range rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#rCode
+###  http://w3id.org/rv-ontology#rCode
 :rCode rdf:type owl:DatatypeProperty ;
        rdfs:range rdf:XMLLiteral .
 
 
-###  http://www.adage.unsw.edu.au/analytics#webLink
+###  http://w3id.org/rv-ontology#webLink
 :webLink rdf:type owl:DatatypeProperty ;
          rdfs:range xsd:anyURI .
 
@@ -154,43 +154,43 @@ rdfs:label rdf:type owl:DatatypeProperty ;
 fabio:ResearchPaper rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Concept
+###  http://w3id.org/rv-ontology#Concept
 :Concept rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#DataSource
+###  http://w3id.org/rv-ontology#DataSource
 :DataSource rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Dataset
+###  http://w3id.org/rv-ontology#Dataset
 :Dataset rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#DatasetStructure
+###  http://w3id.org/rv-ontology#DatasetStructure
 :DatasetStructure rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#LinkType
+###  http://w3id.org/rv-ontology#LinkType
 :LinkType rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#LinkedVariables
+###  http://w3id.org/rv-ontology#LinkedVariables
 :LinkedVariables rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Measure
+###  http://w3id.org/rv-ontology#Measure
 :Measure rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Model
+###  http://w3id.org/rv-ontology#Model
 :Model rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#ModelType
+###  http://w3id.org/rv-ontology#ModelType
 :ModelType rdf:type owl:Class .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Variable
+###  http://w3id.org/rv-ontology#Variable
 :Variable rdf:type owl:Class .
 
 
@@ -202,57 +202,57 @@ fabio:ResearchPaper rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://www.adage.unsw.edu.au/analytics#Causal
+###  http://w3id.org/rv-ontology#Causal
 :Causal rdf:type owl:NamedIndividual ,
                  :LinkType ;
         rdfs:comment "Causal: a variable causes another variable"^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Correlated
+###  http://w3id.org/rv-ontology#Correlated
 :Correlated rdf:type owl:NamedIndividual ,
                      :LinkType ;
             rdfs:comment "Two variables are correlated to each other." .
 
 
-###  http://www.adage.unsw.edu.au/analytics#DataSource
+###  http://w3id.org/rv-ontology#DataSource
 :DataSource rdf:type owl:NamedIndividual ;
             rdfs:comment "Data source refererce to the source from which a data is coming from, examples are: American Bureau of Statistics, Yahoo Finance, Wharton Research Data Services (WRDS), Thomson Reuters, etc."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Dataset
+###  http://w3id.org/rv-ontology#Dataset
 :Dataset rdf:type owl:NamedIndividual ;
          rdfs:comment "Dataset refers to the data file provided by a data source which contain the data for one or multiple measures."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#DatasetStructure
+###  http://w3id.org/rv-ontology#DatasetStructure
 :DatasetStructure rdf:type owl:NamedIndividual ;
                   rdfs:comment "Dataset structure refers to the meta data for a dataset such as what measures are captured, unit of measur."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#InvestigativeCausal
+###  http://w3id.org/rv-ontology#InvestigativeCausal
 :InvestigativeCausal rdf:type owl:NamedIndividual ,
                               :LinkType ;
                      rdfs:comment "·Investigative Causal: there is a hypothesis that one variable cause another, the hypothesis needs to be tested."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#LinkType
+###  http://w3id.org/rv-ontology#LinkType
 :LinkType rdf:type owl:NamedIndividual ;
           rdfs:comment "Link Type describes the type of link that exists between two or more variables."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#LinkedVariables
+###  http://w3id.org/rv-ontology#LinkedVariables
 :LinkedVariables rdf:type owl:NamedIndividual ;
                  rdfs:comment "A link describes a connection between two variables, the nature of this connection and how this connection was established."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Measure
+###  http://w3id.org/rv-ontology#Measure
 :Measure rdf:type owl:NamedIndividual ;
          rdfs:comment """Measures are the actual values for variables and are expected to have following features:
 · A unique identifier for each measure
 · Dataset structure for the measure"""^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Model
+###  http://w3id.org/rv-ontology#Model
 :Model rdf:type owl:NamedIndividual ;
        rdfs:comment """Models refer to underlying technique(s) which establish the link between two variables. The model is required to have following specifications:
 · Class of model such as statistical or mathematical model
@@ -260,19 +260,19 @@ fabio:ResearchPaper rdf:type owl:Class .
 · Additional features within each model type"""^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#NonCausal
+###  http://w3id.org/rv-ontology#NonCausal
 :NonCausal rdf:type owl:NamedIndividual ,
                     :LinkType ;
            rdfs:comment "NonCausal: Unable to establish a causal link between two variables."^^rdfs:Literal .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Proxy
+###  http://w3id.org/rv-ontology#Proxy
 :Proxy rdf:type owl:NamedIndividual ,
                 :LinkType ;
        rdfs:comment "One variable can be used as a proxy to the second variable." .
 
 
-###  http://www.adage.unsw.edu.au/analytics#Variable
+###  http://w3id.org/rv-ontology#Variable
 :Variable rdf:type owl:NamedIndividual ;
           rdfs:comment """Variables exist as metrics to quantify concepts. Variables are required to have following features:
 · A unique identifier for each variable
