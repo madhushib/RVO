@@ -19,6 +19,22 @@ adage:MMID0002 rdf:type owl:NamedIndividual ,
           analytics:rCode "rent * (1 + cost of capital/100) ^ -year"^^rdfs:Literal ;
           rdfs:label "Present value of rent"^^rdfs:Literal .
 
+adage:SMID0012 rdf:type owl:NamedIndividual , analytics:StatisticalModel ;
+                   analytics:modelType analytics:MT00001 ;
+                   rdfs:label "Test Linear Model by Fethi with 2 variables-BRW_and_BOW"^^rdfs:Literal ;
+                   analytics:rCode "/home/house_price_data/r_models/LinearModelP2_BRW_BOW.rds"^^rdfs:Literal.
+
+
+adage:SMID0013 rdf:type owl:NamedIndividual , analytics:StatisticalModel ;
+                   analytics:modelType analytics:MT00001 ;
+                   rdfs:label "Test Linear Model by Fethi with 2 variables-BRW_and_AUD"^^rdfs:Literal ;
+                   analytics:rCode "/home/house_price_data/r_models/LinearModelP2_BRW_AUD.rds"^^rdfs:Literal.
+
+ adage:SMID0014 rdf:type owl:NamedIndividual , analytics:StatisticalModel ;
+                   analytics:modelType analytics:MT00010 ;
+                   rdfs:label "Test NNModelP_BRW_BOW-AUD-MOB-HIP"^^rdfs:Literal ;
+                   analytics:rCode "/home/house_price_data/r_models/NNModelP_BRW_BOW-AUD-MOB-HIP.rds"^^rdfs:Literal.
+
 
 ###  http://w3id.org/rv-ontology#MT00001
 analytics:MT00001 rdf:type owl:NamedIndividual ,
@@ -67,3 +83,7 @@ analytics:MT00006 rdf:type owl:NamedIndividual ,
 analytics:MT00007 rdf:type owl:NamedIndividual ,
                   analytics:ModelType ;
          analytics:modelEstimator analytics:LeastSquareErrors .
+
+analytics:MT00010 rdf:type owl:NamedIndividual ,
+                  analytics:ModelType ;
+         rdfs:label "Neural Networks"^^rdfs:Literal .
