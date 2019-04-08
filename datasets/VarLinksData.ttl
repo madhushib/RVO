@@ -1102,3 +1102,15 @@ analytics:Origin;
 analytics:originType analytics:ViaModel,analytics:ViaLiterature;
 analytics:referenceOfOrigin adage:SMID0010,adage:REF0049.
 
+
+adage:VL00033 rdf:type owl:NamedIndividual,
+analytics:LinkedVariables;
+analytics:firstVariable adage:VID00189;
+analytics:linkType analytics:Causal;
+analytics:secondVariable adage:VID00005;
+analytics:origin adage:VL00033origin.
+
+adage:VL00033origin rdf:type owl:NamedIndividual ,
+analytics:Origin;
+analytics:originType analytics:ViaModel;
+analytics:referenceOfOrigin adage:SMID0015.

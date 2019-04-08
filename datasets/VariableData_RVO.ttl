@@ -27,7 +27,7 @@ adage:VID00004 rdf:type owl:NamedIndividual,analytics:Variable;
                                 analytics:origin adage:REF0003;
                                 rdfs:label "Case–Shiller index"^^rdfs:Literal.
 adage:VID00005 rdf:type owl:NamedIndividual,analytics:Variable;
-                                
+                                analytics:measuredBy adage:MID00390;
                                 analytics:operationalize dbr:Economics,dbr:Housing,dbr:Real_estate,dbr:Pricing,dbr:Sales;
                                 analytics:origin adage:REF0003;
                                 rdfs:label "House sale price"^^rdfs:Literal.
@@ -936,13 +936,17 @@ adage:VID00186 rdf:type owl:NamedIndividual,analytics:Variable;
                                 analytics:operationalize dbr:Economics,dbr:Macroeconomics;
                                 analytics:origin adage:REF0049;
                                 rdfs:label "Narrow credit including loans and advances by AFIs plus Bills on issue"^^rdfs:Literal.
-adage:VID00187 rdf:type owl:NamedIndividual,analytics:Variable;
-                                
+adage:VID00187 rdf:type owl:NamedIndividual,analytics:Variable;                             
                                 analytics:operationalize dbr:Economics,dbr:Macroeconomics;
                                 analytics:origin adage:REF0049;
                                 rdfs:label "Loans and advances; Banks "^^rdfs:Literal.
 adage:VID00188 rdf:type owl:NamedIndividual,analytics:Variable;
-                                
                                 analytics:operationalize dbr:Economics,dbr:Macroeconomics,dbr:Rate,dbr:Bank_rate,dbr:Bank;
                                 analytics:origin adage:REF0049;
                                 rdfs:label "Overnight Interbank Rate (IBR) "^^rdfs:Literal.
+
+ adage:VID00189 rdf:type owl:NamedIndividual,analytics:Variable;
+                 analytics:operationalize dbr:Economics,dbr:Housing,dbr:Real_estate,dbr:Pricing,dbr:Sales;
+                 analytics:measuredBy adage:MID00391.
+                 rdfs:label "Contract Year"^^rdfs:Literal;
+                 

@@ -35,6 +35,13 @@ adage:SMID0013 rdf:type owl:NamedIndividual , analytics:StatisticalModel ;
                    rdfs:label "Test NNModelP_BRW_BOW-AUD-MOB-HIP"^^rdfs:Literal ;
                    analytics:rCode "/home/house_price_data/r_models/NNModelP_BRW_BOW-AUD-MOB-HIP.rds"^^rdfs:Literal.
 
+adage:SMID0015 rdf:type owl:NamedIndividual , analytics:StatisticalModel ;
+                   analytics:modelType analytics:MT00001 ;
+                   rdfs:label "LinearModelP2_Unit2_ContractPrice_ContractYear"^^rdfs:Literal ;
+                   analytics:rCode "/home/house_price_data/r_models/LinearModelP2_ContractPrice_ContractYear.rds"^^rdfs:Literal;
+                   analytics:independentVariable adage:VID00189;
+                   analytics:dependentVariable adage:VID00005.
+
 
 ###  http://w3id.org/rv-ontology#MT00001
 analytics:MT00001 rdf:type owl:NamedIndividual ,

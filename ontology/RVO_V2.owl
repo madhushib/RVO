@@ -122,7 +122,20 @@
         <rdfs:range rdf:resource="http://w3id.org/rv-ontology#Variable"/>
     </owl:ObjectProperty>
     
+    <!-- http://w3id.org/rv-ontology#dependentVariable -->
 
+    <owl:ObjectProperty rdf:about="http://w3id.org/rv-ontology#dependentVariable">
+        <rdfs:domain rdf:resource="http://w3id.org/rv-ontology#Model"/>
+        <rdfs:range rdf:resource="http://w3id.org/rv-ontology#Variable"/>
+    </owl:ObjectProperty>
+    
+        <!-- http://w3id.org/rv-ontology#independentVariable -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/rv-ontology#independentVariable">
+        <rdfs:domain rdf:resource="http://w3id.org/rv-ontology#Model"/>
+        <rdfs:range rdf:resource="http://w3id.org/rv-ontology#Variable"/>
+    </owl:ObjectProperty>
+    
 
     <!-- http://w3id.org/rv-ontology#dataSource -->
 

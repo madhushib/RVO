@@ -30,6 +30,21 @@
 :controlVariable a owl:ObjectProperty ;
 	rdfs:domain :Model ;
 	rdfs:range :Variable .
+
+# 
+# http://w3id.org/rv-ontology#dependentVariable
+
+:dependentVariable a owl:ObjectProperty ;
+	rdfs:domain :Model ;
+	rdfs:range :Variable .
+
+# 
+# http://w3id.org/rv-ontology#independentVariable
+
+:independentVariable a owl:ObjectProperty ;
+	rdfs:domain :Model ;
+	rdfs:range :Variable .
+
 # 
 # http://w3id.org/rv-ontology#dataSource
 
